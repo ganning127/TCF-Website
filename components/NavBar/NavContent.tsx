@@ -38,7 +38,7 @@ const MobileNavContext = (props: FlexProps) => {
           link.children ? (
             <Submenu.Mobile key={idx} link={link} />
           ) : (
-            <NavLink.Mobile key={idx} href={link.href}>
+            <NavLink.Mobile key={idx} href={link.href} color="text.dark">
               {link.label}
             </NavLink.Mobile>
           ),
@@ -51,8 +51,8 @@ const MobileNavContext = (props: FlexProps) => {
 const DesktopNavContent = (props: FlexProps) => {
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
-      <Box as="a" href="#" rel="home">
-        <VisuallyHidden>Envelope</VisuallyHidden>
+      <Box as="a" href="/" rel="home">
+        <VisuallyHidden>The Coding Foundation</VisuallyHidden>
         <Img src="/logo.png" alt="Keep" maxW="150px" />
       </Box>
       <HStack as="ul" id="nav__primary-menu" aria-label="Main Menu" listStyleType="none">
@@ -67,7 +67,7 @@ const DesktopNavContent = (props: FlexProps) => {
         ))}
       </HStack>
       <HStack spacing="8" minW="100px" justify="space-between">
-        <Button bg="blue.shade" color="white" as="a" href="#" borderRadius="20">
+        <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20">
           Create Account
         </Button>
 

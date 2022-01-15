@@ -33,7 +33,7 @@ const DesktopSubmenu = (props: SubmenuProps) => {
         <Box maxW="7xl" mx="auto" px="8">
           <SimpleGrid spacing="10" columns={2}>
             {link.children?.map((item, idx) => (
-              <DesktopMenuItem key={idx} title={item.label} href={item.href} icon={item.icon}>
+              <DesktopMenuItem key={idx} title={item.label} href={item.href} icon={item.icon} color="text.dark">
                 {item.description}
               </DesktopMenuItem>
             ))}
@@ -57,6 +57,7 @@ const MobileSubMenu = (props: SubmenuProps) => {
         cursor="pointer"
         onClick={onToggle}
         paddingEnd="4"
+        color="text.dark"
       >
         <Box flex="1">{link.label}</Box>
         <Box as={FaChevronDown} transform={`rotate(${isOpen ? '180deg' : '0deg'})`} />
@@ -64,7 +65,7 @@ const MobileSubMenu = (props: SubmenuProps) => {
       <Collapse in={isOpen}>
         <Box pl="5">
           {link.children?.map((item, idx) => (
-            <NavLink.Mobile key={idx} href={item.href}>
+            <NavLink.Mobile key={idx} href={item.href} color="text.dark">
               {item.label}
             </NavLink.Mobile>
           ))}

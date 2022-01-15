@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { IoCalendar, IoGrid, IoHelpBuoy } from 'react-icons/io5'
-import { MdWeb } from 'react-icons/md'
+import { MdComputer } from 'react-icons/md'
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { AiOutlineTeam } from "react-icons/ai";
 
 export interface Link {
   label: string
@@ -21,15 +23,15 @@ export const links: Link[] = [
     children: [
       {
         label: 'Tutoring',
-        description: 'Read our documentation and FAQs, or get in touch.',
+        description: 'Take both private lessons and group sessions all for free!',
         href: '#',
-        icon: <IoHelpBuoy />,
+        icon: <FaChalkboardTeacher />,
       },
       {
         label: 'Workshops',
-        description: 'Discover and join your local Sketch community.',
+        description: 'Learn to code through group lessons!',
         href: '#',
-        icon: <IoCalendar />,
+        icon: <MdComputer />,
       },
     ],
   },
@@ -38,13 +40,13 @@ export const links: Link[] = [
     children: [
       {
         label: 'Join Our Team',
-        description: 'Read our documentation and FAQs, or get in touch.',
+        description: 'Join a team of talented developers, designers, and project managers.',
         href: '/join',
-        icon: <IoHelpBuoy />,
+        icon: <AiOutlineTeam />,
       },
       {
         label: 'Events',
-        description: 'Discover and join your local Sketch community.',
+        description: 'Discover and join virtual TCF events!',
         href: '/events',
         icon: <IoCalendar />,
       },

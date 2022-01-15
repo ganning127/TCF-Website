@@ -32,7 +32,7 @@ const GlobalStyle = ({ children }) => {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: #fafafa;
+            background: #fffff;
           }
         `}
       />
