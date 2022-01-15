@@ -21,15 +21,15 @@ const MobileNavContext = (props: FlexProps) => {
   return (
     <>
       <Flex align="center" justify="space-between" className="nav-content__mobile" {...props}>
-        <Box flexBasis="6rem">
+        <Box>
           <ToggleButton isOpen={isOpen} onClick={onToggle} />
         </Box>
         <Box as="a" rel="home" mx="auto" href="/">
           <Img src="/logo.png" alt="Keep" maxW="150px" />
         </Box>
-        <Box visibility={{ base: 'hidden', sm: 'visible' }}>
+        <Box>
           <Button bg="blue.shade" color="white" as="a" href="#" borderRadius="20">
-            Create Account
+            Sign In
           </Button>
         </Box>
       </Flex>
@@ -68,7 +68,7 @@ const DesktopNavContent = (props: FlexProps) => {
       </HStack>
       <HStack spacing="8" minW="100px" justify="space-between">
         <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20">
-          Create Account
+          Sign In
         </Button>
 
       </HStack>
