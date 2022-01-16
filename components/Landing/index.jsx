@@ -3,7 +3,7 @@ import { SimpleGrid, Box, Heading, Button, Text, Img, HStack } from '@chakra-ui/
 export const Landing = ({ title, desc, button1, link1, button2, link2, pic }) => {
     return (
         <>
-            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
+            <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={0}>
                 <Box d="flex" justifyContent="center">
                     <Box align="center" alignSelf="center" >
                         <Heading size="4xl" as="h1" color="text.dark" >{title}</Heading>
@@ -17,7 +17,7 @@ export const Landing = ({ title, desc, button1, link1, button2, link2, pic }) =>
                     </Box>
                 </Box>
                 <Box >
-                    <Img src={pic} />
+                    <Img src={pic} mx="auto" />
                 </Box>
 
 

@@ -10,10 +10,16 @@ const theme = extendTheme({
             "dark": "#444343"
         },
         red: {
-            "shade": "#BA2828"
+            "shade": "#BA2828",
+            "shade.hover": "#8a1e1e"
         },
         orange: {
-            "shade": "#F9B508"
+            "shade": "#F9B508",
+            "shade.hover": "#d69d0b"
+        },
+        turquoise: {
+            "shade": "#39A6AD",
+            "shade.hover": "#308b91"
         },
         yellow: {
             "shade": "#FFE600"

@@ -4,7 +4,7 @@ export const HeadingWithDesc = ({ desc, children }) => {
     return (
         <Box textAlign="center" maxW="700px" mx="auto">
             <Heading as="h1" size="2xl" color="text.dark.heading" mb="4" fontWeight="bold">{children}</Heading>
-            <Text fontWeight="normal" color="text.dark" fontSize="xl" my="3" >{desc}</Text>
+            {desc && <Text fontWeight="normal" color="text.dark" fontSize="xl" my="3" >{desc}</Text>}
         </Box >
     )
 }

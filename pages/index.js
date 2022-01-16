@@ -8,6 +8,8 @@ import { TwoColText } from '../components/TwoCol/TwoColText'
 import { TwoColTextWithPicLeft } from '../components/TwoCol/TwoColTextWithPicLeft'
 import { TwoColTextWithPicRight } from '../components/TwoCol/TwoColTextWithPicRight'
 import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
+import { TwoColPicWithTextAndButton } from '../components/TwoCol/TwoColPicWithTextAndButton'
+import { TwoColPicWithTextAndButtonRight } from '../components/TwoCol/TwoColPicWithTextAndButtonRight'
 
 export default function Home() {
   return (
@@ -58,6 +60,43 @@ export default function Home() {
           desc="In addition, we also offer free resources for students to explore the field of STEM and get a head start on their ambitions. Through fun and engaging activities, The Coding Foundation ensures that students become inspired to work with technology in the future."
           pic="/credit_cards.png"
         />
+
+        <MedSep />
+
+        <HeadingWithDesc desc="Let’s Get Started">
+          What do we offer?
+        </HeadingWithDesc>
+
+        <TwoColPicWithTextAndButton
+          title="Workshops"
+          desc="Our workshops cultivate an interest for coding for students through comprehensive and interactive activities. It is an opportunity that you don't want to miss!"
+          pic="/workshops.png"
+          buttonText="Read More"
+          link="/TODO"
+          themeColor="orange.shade"
+          themeHover="orange.shade.hover"
+        />
+
+        <TwoColPicWithTextAndButtonRight
+          title="Mentoring"
+          desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors."
+          pic="/mentoring.png"
+          buttonText="Read More"
+          link="/TODO"
+          themeColor="red.shade"
+          themeHover="red.shade.hover"
+        />
+
+        <TwoColPicWithTextAndButton
+          title="Resources"
+          desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors."
+          pic="/resources.png"
+          buttonText="Read More"
+          link="/TODO"
+          themeColor="turquoise.shade"
+          themeHover="turquoise.shade.hover"
+        />
+
         <Footer />
       </Container>
 
