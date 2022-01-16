@@ -10,6 +10,7 @@ import { TwoColTextWithPicRight } from '../components/TwoCol/TwoColTextWithPicRi
 import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import { TwoColPicWithTextAndButton } from '../components/TwoCol/TwoColPicWithTextAndButton'
 import { TwoColPicWithTextAndButtonRight } from '../components/TwoCol/TwoColPicWithTextAndButtonRight'
+import { Testimonials } from '../components/Testimonials'
 
 export default function Home() {
   return (
@@ -96,6 +97,13 @@ export default function Home() {
           themeColor="turquoise.shade"
           themeHover="turquoise.shade.hover"
         />
+
+        <MedSep />
+
+        <HeadingWithDesc desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors.">
+          Testimonials
+        </HeadingWithDesc>
+        <Testimonials />
 
         <Footer />
       </Container>
