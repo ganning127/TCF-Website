@@ -6,6 +6,7 @@ const theme = extendTheme({
             "light": "#ffffff"
         },
         text: {
+            "dark.heading": "#2E2E2E",
             "dark": "#444343"
         },
         red: {
@@ -28,10 +29,6 @@ const theme = extendTheme({
         gray: {
             "shade": "#3C4949"
         },
-        text: {
-            "dark": "#272727"
-        }
-
     },
     initalColorMode: 'light',
     useSystemColorMode: false
