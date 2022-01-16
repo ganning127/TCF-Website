@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Container } from '@chakra-ui/react'
+import { Container, Divider } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
 import { Footer } from '../components/Footer/index.tsx'
 import { Landing } from '../components/Landing/index'
@@ -11,7 +11,9 @@ import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import { TwoColPicWithTextAndButton } from '../components/TwoCol/TwoColPicWithTextAndButton'
 import { TwoColPicWithTextAndButtonRight } from '../components/TwoCol/TwoColPicWithTextAndButtonRight'
 import { Testimonials } from '../components/Testimonials'
-
+import { FullButtonWithPic } from '../components/TwoCol/FullButtonWithPic'
+import { SubSection } from '../components/Landing/SubSection'
+import { Contact } from '../components/TwoCol/Contact'
 export default function Home() {
   return (
     <>
@@ -34,6 +36,7 @@ export default function Home() {
           link2="/about"
           pic="/home.png"
         />
+
 
         <MedSep />
 
@@ -104,6 +107,38 @@ export default function Home() {
           Testimonials
         </HeadingWithDesc>
         <Testimonials />
+
+        <MedSep />
+
+        <SubSection
+          title="Join Us"
+          desc="The Coding Foundation offers internship positions for any department. If you want to learn more, click the button below!"
+          buttonText="Join Now!"
+          buttonLink="/SDFTODO"
+          themeColor="blue.shade"
+          themeColorHover="blue.shade.hover"
+        />
+
+        <MedSep />
+
+        <HeadingWithDesc desc="Explore your passion for coding!">
+          Join Our Discord Server!
+        </HeadingWithDesc>
+
+        <FullButtonWithPic
+          pic="phone.png"
+          logo="/discord.png"
+          desc="Join to get in touch with students across the world. Develop your network to develop your passion. Anyone is free to join!!"
+          buttonText="Join now"
+          buttonLink="https://discord.gg/HbDbXyWVM2"
+          themeColor="blue.dark.shade"
+          themeColorHover="blue.darkShadeHover"
+        />
+
+
+        <MedSep />
+        <Contact />
+        <MedSep />
 
         <Footer />
       </Container>

@@ -27,7 +27,8 @@ const theme = extendTheme({
         blue: {
             "shade": "#4198B4",
             "shade.hover": "#29697d",
-            "darkShade": "#5B6FB4"
+            "dark.shade": "#5B6FB4",
+            "darkShadeHover": "#49598f"
         },
         green: {
             "shade": "#2AAD4F"

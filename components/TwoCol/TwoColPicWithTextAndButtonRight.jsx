@@ -16,7 +16,5 @@ export const TwoColPicWithTextAndButtonRight = ({ title, desc, themeColor, theme
             </Box>
         </SimpleGrid>
     )
-
-
 }
 
