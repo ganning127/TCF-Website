@@ -59,7 +59,7 @@ export const Contact = (props) => {
                     </Formik>
                 </Box>
 
-                <Box mx="auto">
+                <Box mx="auto" d={{ base: 'none', md: 'block' }}>
                     <Img src="/contact.png" alt="pic" maxH="450px" />
                 </Box>
             </SimpleGrid >

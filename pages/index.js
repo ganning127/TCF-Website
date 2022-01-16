@@ -57,10 +57,10 @@ export default function Home() {
           pic="/why_us.png"
           title="Why Us?"
           desc="The Coding Foundation aims to bring free, effective and encouraging CS education for all students in different backgrounds. To do so, The Coding Foundation offers free mentoring to foster a love in coding technology for kids. "
-          bgColor="transparent"
         />
 
         <TwoColTextWithPicRight
+          title="Build the future"
           desc="In addition, we also offer free resources for students to explore the field of STEM and get a head start on their ambitions. Through fun and engaging activities, The Coding Foundation ensures that students become inspired to work with technology in the future."
           pic="/credit_cards.png"
         />
@@ -76,7 +76,7 @@ export default function Home() {
           desc="Our workshops cultivate an interest for coding for students through comprehensive and interactive activities. It is an opportunity that you don't want to miss!"
           pic="/workshops.png"
           buttonText="Read More"
-          link="/TODO"
+          buttonLink="/TODO"
           themeColor="orange.shade"
           themeHover="orange.shade.hover"
         />
@@ -86,7 +86,7 @@ export default function Home() {
           desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors."
           pic="/mentoring.png"
           buttonText="Read More"
-          link="/TODO"
+          buttonLink="/TODO"
           themeColor="red.shade"
           themeHover="red.shade.hover"
         />
@@ -96,7 +96,7 @@ export default function Home() {
           desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors."
           pic="/resources.png"
           buttonText="Read More"
-          link="/TODO"
+          buttonLink="/TODO"
           themeColor="turquoise.shade"
           themeHover="turquoise.shade.hover"
         />
