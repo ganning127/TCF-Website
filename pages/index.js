@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Container, Divider } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
 import { Footer } from '../components/Footer/index.tsx'
 import { Landing } from '../components/Landing/index'
@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar />
+      <NavBar active="home" />
 
 
       <Container maxW="container.xl">

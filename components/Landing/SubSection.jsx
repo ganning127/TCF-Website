@@ -1,6 +1,5 @@
-import { Img, Box, Text, Button, Center } from '@chakra-ui/react'
+import { Box, Text, Button, Center } from '@chakra-ui/react'
 import { HeadingWithDesc } from '../Headings/HeadingWithDesc'
-import NextLink from 'next/link'
 export const SubSection = ({ title, desc, buttonText, buttonLink, themeColor, themeColorHover }) => {
     return (
         <Center h="300">

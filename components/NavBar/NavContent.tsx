@@ -48,7 +48,7 @@ const MobileNavContext = (props: FlexProps) => {
   )
 }
 
-const DesktopNavContent = (props: FlexProps) => {
+const DesktopNavContent = (props: any) => {
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="/" rel="home">
@@ -59,9 +59,9 @@ const DesktopNavContent = (props: FlexProps) => {
         {links.map((link, idx) => (
           <Box as="li" key={idx} id={`nav__menuitem-${idx}`}>
             {link.children ? (
-              <Submenu.Desktop link={link} />
+              <Submenu.Desktop active={props.active} link={link} />
             ) : (
-              <NavLink.Desktop href={link.href}>{link.label}</NavLink.Desktop>
+              <NavLink.Desktop href={link.href} color={link.label.toLowerCase() === props.active ? "blue.shade" : "text.dark"}>{link.label}</NavLink.Desktop>
             )}
           </Box>
         ))}
