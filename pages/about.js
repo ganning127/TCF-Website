@@ -12,7 +12,7 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>The Coding Foundation</title>
+                <title>About - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
