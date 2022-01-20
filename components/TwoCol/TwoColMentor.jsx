@@ -1,4 +1,4 @@
-import { SimpleGrid, Heading, Text, Box, Img, Link} from '@chakra-ui/react'
+import { SimpleGrid, Heading, Text, Box, Img, Link } from '@chakra-ui/react'
 
 export const TwoColMentor = ({ pic, title, desc1, desc2, desc3, desc4, question, link, bgColor }) => {
     return (
