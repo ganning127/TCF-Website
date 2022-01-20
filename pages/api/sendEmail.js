@@ -1,7 +1,6 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-    console.log(process.env.CONTACT_EMAIL)
     const fromEmail = '"TCF Contact" <contact@thecodingfoundation.com>';
     const toEmail = 'ganningxu@gmail.com'
     const request = JSON.parse(req.body);
