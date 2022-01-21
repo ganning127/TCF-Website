@@ -34,7 +34,8 @@ const theme = extendTheme({
             "shade": "#2AAD4F"
         },
         gray: {
-            "shade": "#3C4949"
+            "shade": "#3C4949",
+            "light.shade": "#747474"
         },
     },
     initalColorMode: 'light',
