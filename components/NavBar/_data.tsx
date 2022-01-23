@@ -36,7 +36,7 @@ export const links: Link[] = [
     ],
   },
   {
-    label: 'Oppurtunities',
+    label: 'Opportunities',
     children: [
       {
         label: 'Join Our Team',
