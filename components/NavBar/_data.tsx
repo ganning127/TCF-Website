@@ -3,6 +3,8 @@ import { IoCalendar, IoGrid, IoHelpBuoy } from 'react-icons/io5'
 import { MdComputer } from 'react-icons/md'
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { AiOutlineTeam } from "react-icons/ai";
+import { GiTeacher } from "react-icons/gi";
+import { BiCodeCurly } from "react-icons/bi";
 
 export interface Link {
   label: string
@@ -34,6 +36,23 @@ export const links: Link[] = [
         icon: <MdComputer />,
       },
     ],
+  },
+  {
+    label: 'Mentor',
+    children: [
+      {
+        label: 'Mentor Requirements',
+        description: 'Become a mentor and help students learn to code!',
+        href: '/mentor',
+        icon: <GiTeacher />,
+      },
+      {
+        label: 'Mentor Application',
+        description: 'Apply to become a mentor today!',
+        href: '/mentor/apply',
+        icon: <BiCodeCurly />,
+      },
+    ]
   },
   {
     label: 'Opportunities',

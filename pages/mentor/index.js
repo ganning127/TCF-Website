@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
-import { NavBar } from '../components/NavBar/index.tsx'
-import { Footer } from '../components/Footer/index.tsx'
-import { Landing } from '../components/Landing/index'
-import { MedSep } from '../components/Separators/MedSep'
-import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
-import { TwoColMentor } from '../components/TwoCol/TwoColMentor'
-import { TwoColBoxWithButton } from '../components/TwoCol/TwoColBoxWithButton'
+import { NavBar } from '../../components/NavBar/index.tsx'
+import { Footer } from '../../components/Footer/index.tsx'
+import { Landing } from '../../components/Landing/index'
+import { MedSep } from '../../components/Separators/MedSep'
+import { HeadingWithDesc } from '../../components/Headings/HeadingWithDesc'
+import { TwoColMentor } from '../../components/TwoCol/TwoColMentor'
+import { TwoColBoxWithButton } from '../../components/TwoCol/TwoColBoxWithButton'
 
 export default function Mentor() {
     return (
@@ -16,7 +16,7 @@ export default function Mentor() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <NavBar active="home" />
+            <NavBar active="mentor" />
 
 
             <Container maxW="container.xl">
@@ -25,7 +25,7 @@ export default function Mentor() {
                     desc="Teach, Learn, Inspire"
                     pic="/mentor.png"
                     button1="Apply"
-                    link1="/apply"
+                    link1="/mentor/apply"
                 />
 
                 <MedSep />
@@ -55,7 +55,7 @@ export default function Mentor() {
                     desc2_2="Experience in programming (Java, Python, etc.)"
                     desc2_3="Self-motivated team player who is invested in teaching others about computer programming"
 
-                    buttonLink='/apply'
+                    buttonLink='/mentor/apply'
                     buttonText='Jump To Application'
 
                 />
