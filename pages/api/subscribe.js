@@ -3,15 +3,15 @@ const GoogleSpreadsheet = require("google-spreadsheet");
 
 export default async function handler(req, res) {
     const toEmail = req.body.email;
-    const fromEmail = '"The Code Foundation" <thecodingfoundation@gmail.com>';
+    const fromEmail = '"The Code Foundation" <contact@thecodingfoundation.com>';
     const text = `test`;
-    
+
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.TCF_EMAIL,
-            pass: process.env.TCF_EMAIL_PASS
+            user: process.env.CONTACT_EMAIL,
+            pass: process.env.CONTACT_EMAIL_PASS
         }
     });
 
