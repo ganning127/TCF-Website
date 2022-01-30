@@ -8,7 +8,7 @@ import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import { TwoColMentor } from '../components/TwoCol/TwoColMentor'
 import { TwoColWithLongDesc } from '../components/TwoCol/TwoColWithLongDesc'
 import { HeadingWithLogo } from '../components/Headings/HeadingWithLogo'
-import { SubSection } from '../components/Landing/Subsection'
+import { SubSection } from '../components/Landing/SubSection'
 
 export default function Events() {
     return (
