@@ -1,31 +1,33 @@
 import Head from 'next/head'
+
+import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
 import { Footer } from '../components/Footer/index.tsx'
-import { CenteredHeadingWithDesc } from '../components/Headings/CenteredHeadingWithDesc'
-import { Contact } from '../components/TwoCol/Contact'
+import { MedSep } from '../components/Separators/MedSep'
+import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
+import { SubSectionTwoText } from '../components/Landing/SubSectionTwoText'
 
-export default function Join() {
+export default function About() {
     return (
         <>
             <Head>
-                <title>The Coding Foundation</title>
+                <title>Join - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <NavBar active="join" />
-
-            <CenteredHeadingWithDesc 
-            desc1="Poistions await! Here at The Coding Foundation, we're looking for new competent and passionate members who can help The Coding Foundation make a more positive impact towards providing free and better coding education. "
-            desc2="Sincerity.Productivity.Perfection "
-            desc3="This is what we look for in applicants! ">
-                Oppurtunities 
-            </CenteredHeadingWithDesc>
+            <NavBar active="opportunities" />
 
 
+            <Container maxW="container.xl">
+                <SubSectionTwoText
+                    title="Opportunities"
+                    p1="Positions await! Here at The Coding Foundation, we’re looking for new competent and passionate members who can help The Coding Foundation make a more positive impact towards providing free and better coding education."
+                    p2="Sincerity. Productivity. Perfection. This is what we look for in applicants!"
+                />
 
+            </Container>
             <Footer />
-            
-            </>
 
+        </>
     )
 }

@@ -67,7 +67,7 @@ const DesktopNavContent = (props: any) => {
         ))}
       </HStack>
       <HStack spacing="8" minW="100px" justify="space-between">
-        <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20">
+        <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20" shadow='lg'>
           Sign In
         </Button>
 

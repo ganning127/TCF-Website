@@ -9,11 +9,13 @@ import { Link } from './_data.tsx'
 
 interface SubmenuProps {
   link: Link
+  active: String
 }
 
 const DesktopSubmenu = (props: SubmenuProps) => {
   const { link } = props
   const { isOpen, getMenuProps, getTriggerProps } = useNavMenu()
+
   return (
     <>
       <NavLink.Desktop
@@ -25,7 +27,7 @@ const DesktopSubmenu = (props: SubmenuProps) => {
         fontWeight="semibold"
         {...getTriggerProps()}
       >
-        <Box>{link.label}</Box>
+        <Box color={link.label.toLowerCase() === props.active ? "blue.shade" : "text.dark"}>{link.label}</Box>
         <Box marginStart="2" as={FaChevronDown} fontSize="xs" />
       </NavLink.Desktop>
 
