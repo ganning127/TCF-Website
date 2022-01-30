@@ -33,7 +33,7 @@ export default function Events() {
                     desc1="Our Organization features variety of events for both high school students and non-high school sutdents. Sign up for one event to explore your passion and interest for different areas of interests!"
                     desc2="On top of that Join our discord server to get in touch with like minded people like you, where you could post oppurtunities for your ogranization and many more!"
                 />
-  <MedSep />
+      <MedSep />
                 
         <HeadingWithLogo
                 title="Join Our Discord Community"
