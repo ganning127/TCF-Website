@@ -49,6 +49,7 @@ export default function About() {
                     link2="/TODO"
                 />
                 <MedSep />
+            
 
             </Container>
             <Footer />
