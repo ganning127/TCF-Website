@@ -1,5 +1,4 @@
 import Head from 'next/head'
-
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
 import { Footer } from '../components/Footer/index.tsx'
