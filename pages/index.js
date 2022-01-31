@@ -136,11 +136,6 @@ export default function Home() {
           themeColorHover="blue.darkShadeHover"
         />
 
-        <MedSep />
-
-        <TwoColCards />
-
-        <MedSep />
         <Contact />
         <MedSep />
 

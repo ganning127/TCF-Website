@@ -1,8 +1,7 @@
 import { SimpleGrid, Box, Text, Img, Link } from '@chakra-ui/react'
 
-const data = require('../../data/dummy-data.json');
-
-export const TwoColCards = () => {
+export const TwoColCards = (json) => {
+    const data = require(json);
     return (
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} mx="auto" textAlign="center" justifyContent="center">
             <Box bg="#FDFDFD" shadow="lg" rounded="xl" maxW="400px" p={5} mx="auto">
