@@ -26,7 +26,7 @@ export const links: Link[] = [
       {
         label: 'Tutoring',
         description: 'Take both private lessons and group sessions all for free!',
-        href: '#',
+        href: '/tutoring',
         icon: <FaChalkboardTeacher />,
       },
       {
