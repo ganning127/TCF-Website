@@ -38,6 +38,7 @@ export const SubscribeForm = (props: HTMLChakraProps<'form'>) => {
 
     console.log(`Subscribing ${email} to newsletter...`)
     let result = await res.json()
+    console.log(result)
     setSubmitted(true);
     setLoading(false);
   }
