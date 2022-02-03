@@ -1,37 +1,37 @@
 [
     {
-        "name": "Peter Schon",
-        "title": "TCF Student",
-        "img": "/pfpPlaceHolder.png",
+        "name": "Julia Wrona",
+        "title": "Director of Marketing",
+        "img": "/julia_wrona.png",
         "rating": 5,
-        "review": "“The Coding Foundation Helped me to achieve my long lasting goals in just 2 hours of class daily for 3 weeks for free!”"
+        "review": "“I admire the organization's will to educate students about coding, and that's why I joined! Learning how to code opens up many pathways in careers, and coding is starting to become a popular subject. I'm excited to empower students through coding and educating others!”"
     },
     {
-        "name": "Peter Schon",
+        "name": "Sherlyn Saavedra",
         "title": "TCF Student",
-        "img": "/pfpPlaceHolder.png",
+        "img": "/sherlyn_saavedra.jpeg",
         "rating": 5,
-        "review": "“The Coding Foundation Helped me to achieve my long lasting goals in just 2 hours of class daily for 3 weeks for free!”"
+        "review": "“As a student of The Coding Foundation it has been a wonderful experience learning about various different languages in code. The instructors are absolutely incredible and are always there to help answer our questions. I would definitely recommend you to check them out since it’s amazing for any level coders who want to just experiment or are truly passionate. Thank you !”"
     },
     {
-        "name": "Peter Schon",
-        "title": "TCF Student",
-        "img": "/pfpPlaceHolder.png",
+        "name": "Erika Chiu",
+        "title": "Operations and HR Intern",
+        "img": "/erika_chiu.jpeg",
         "rating": 5,
-        "review": "“The Coding Foundation Helped me to achieve my long lasting goals in just 2 hours of class daily for 3 weeks for free!”"
+        "review": "“My experience at The Coding Foundation has been great! The community is very welcoming and the people are very helpful. I’ve learned so much since I first started at TCF, and I’ve been able to make new connections with people that are on the same teams as me, as well as those that aren’t!”"
     },
     {
-        "name": "Peter Schon",
-        "title": "TCF Student",
-        "img": "/pfpPlaceHolder.png",
+        "name": "Vivian Song",
+        "title": "Chief Operating Officer",
+        "img": "/vivan_song.JPEG",
         "rating": 5,
-        "review": "“The Coding Foundation Helped me to achieve my long lasting goals in just 2 hours of class daily for 3 weeks for free!”"
+        "review": "“Vivian is a rising senior from Ontario who is passionate about computer science and financial literacy. She has worked with several non-profit organizations including Youth Insights and The Teen Trillionaire in the efforts of improving the accessibility of youth opportunities. In her free time she enjoys watching true crime documentaries, reading and programming.”"
     },
     {
-        "name": "Peter Schon",
-        "title": "TCF Student",
-        "img": "/pfpPlaceHolder.png",
+        "name": "Sankalp Khira",
+        "title": "Director of Public Relations",
+        "img": "/sankalp_khira.jpeg",
         "rating": 5,
-        "review": "“The Coding Foundation Helped me to achieve my long lasting goals in just 2 hours of class daily for 3 weeks for free!”"
+        "review": "“Really happy to be working for the Coding Foundation, Its a great community filled with lots of love and devoted people ”"
     }
 ]
