@@ -25,7 +25,7 @@ export const Contact = (props) => {
         let email = document.getElementById('email').value;
         let message = document.getElementById('message').value;
         let subject = document.getElementById('subject').value;
-
+        console.log(email)
         const resp = await fetch('/api/sendEmail', {
             method: 'POST',
             body: JSON.stringify({
