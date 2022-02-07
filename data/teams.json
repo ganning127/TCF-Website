@@ -1,0 +1,83 @@
+[
+    {
+        "color": "red.shade",
+        "title": "Curriculum",
+        "pic": "/curriculum.png",
+        "head1": "Description",
+        "desc1_1": "Planning on Teaching, mentoring or developing our curriculum? Apply for the curriculum development team at TCF! We are looking for people who are passionate about teaching and have a strong desire to help students in their learning journey.",
+        "head2": "Responsibilities",
+        "resps": [
+            "You have experiance using programming languages (Java, Python etc.)",
+            "Regularly schedule meetings with the students.",
+            "Perform Tasks in timely manner and consistently meet deadlines.",
+            "Strong Communication, Public Speaking, and Time management skills are a necessity.",
+            "Strong communication skills are a necessity",
+            "Can dedicate 2-3 hours per week."
+        ],
+        "head3": "Requirements",
+        "desc3_1": "You don’t have previous experience in this field? Don’t worry! We’ve got your back, you could still apply for this positions!",
+        "closing": "Excited? We are waiting for your application. All the best from TCF :)",
+        "button1Text": "Apply",
+        "button1Link": "/mentor/apply"
+    },
+    {
+        "title": "Community",
+        "pic": "/community.png",
+        "color": "orange.shade",
+        "head1": "Description",
+        "desc1_1": "Do you want gain leadership experience. Become a Discord Moderator, Graphic Illustrator,  Program Coordinator or join our Operations department.",
+        "head2": "Responsibilities",
+        "resps": [
+            "Perform Tasks in timely manner and regularly meet deadlines.",
+            "Willing to commit 4-5hrs/week.",
+            "Have strong leadership skills",
+            "Strong Time Management, interpersonal and communication skills.",
+            "Plays an active role in managing various projects to maintain the structure of organization.",
+            "Responds actively on Discord."
+        ],
+        "head3": "Requirements",
+        "desc3": "You don’t have previous experience in this field? Don’t worry! We’ve got your back, you could still apply for this positions!",
+        "closing": "Excited? We are waiting for your application. All the best from TCF :)",
+        "button1Text": "Apply",
+        "button1Link": "https://forms.gle/nhddgRDahNd2o4GMA"
+    },
+    {
+        "title": "Business",
+        "pic": "/business.png",
+        "color": "green.shade",
+        "head1": "Description",
+        "desc1_1": "Do you want to gain experience intern experience in Finance/Law, Marketing, Human Resources, Public Relations or Logistics? Take a shot at applying to one of our business departments. ",
+        "head2": "Responsibilities",
+        "resps": [
+            "Perform Tasks in timely manner and regularly meet deadlines.",
+            "Willing to commit 3-4hrs/week.",
+            "Good communication and networking skills",
+            "Responds actively on Discord."
+        ],
+        "head3": "Requirements",
+        "desc3": "You don’t have previous experience in this field? Don’t worry! We’ve got your back, you could still apply for this positions!",
+        "closing": "Excited? We are waiting for your application. All the best from TCF :)",
+        "button1Text": "Apply",
+        "button1Link": "https://forms.gle/nhddgRDahNd2o4GMA"
+    },
+    {
+        "title": "Web Development",
+        "pic": "/business.png",
+        "color": "blue.shade",
+        "head1": "Description",
+        "desc1_1": "Interested in web development? We offer internship opportunities for both front-end and back-end developers.",
+        "head2": "Responsibilities",
+        "resps": [
+            "Experience with web technologies (Proficiency in one language is enough)",
+            "Frontend Framework (React.js)",
+            "HTML, CSS, and Vanilla Javascript ",
+            "Passionate team player who is dedicated to enhancing the organization’s impact.",
+            "Responds actively on Discord."
+        ],
+        "head3": "Requirements",
+        "desc3": "You don’t have previous experience in this field? Don’t worry! We’ve got your back, you could still apply for this positions!",
+        "closing": "Excited? We are waiting for your application. All the best from TCF :)",
+        "button1Text": "Apply",
+        "button1Link": "https://forms.gle/nhddgRDahNd2o4GMA"
+    }
+]
