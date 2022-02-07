@@ -1,5 +1,6 @@
 import { Heading, Text, Box } from '@chakra-ui/react'
 
+
 export const ExecBoardOpps = ({ }) => {
     return (
         <Box textAlign="center" maxW="700px" mx="auto">
