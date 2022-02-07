@@ -44,7 +44,7 @@ export default function About() {
                     title="Interns List"
                     desc="The Coding Foundation is committed to a work environment in which all individuals are treated with respect and dignity. Each individual has the right to work in a professional atmosphere that promotes equal opportunities and prohibits unlawful discriminatory practices, including any sort of harrasement."
                     button1="View Interns List"
-                    link1="/TODO"
+                    link1="https://docs.google.com/spreadsheets/d/16wyImVL_f1Osx3p-WOs2A4GQZN19oJv_dI4uojt7Z84/edit#gid=0"
                     button2="Join Us"
                     link2="/join"
                 />
