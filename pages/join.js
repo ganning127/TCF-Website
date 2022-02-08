@@ -31,8 +31,6 @@ export default function About() {
                     data={Positions}
                 />
 
-
-
             </Container>
             <Footer />
 
