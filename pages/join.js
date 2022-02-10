@@ -30,9 +30,6 @@ export default function About() {
                 <FullPageTabs
                     data={Positions}
                 />
-            
-            
-
             </Container>
             <Footer />
 
