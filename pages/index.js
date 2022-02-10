@@ -115,7 +115,7 @@ export default function Home() {
           title="Join Us"
           desc="The Coding Foundation offers internship positions for any department. If you want to learn more, click the button below!"
           buttonText="Join Now!"
-          buttonLink="/SDFTODO"
+          buttonLink="/join"
           themeColor="blue.shade"
           themeColorHover="blue.shade.hover"
         />
@@ -135,6 +135,7 @@ export default function Home() {
           themeColor="blue.dark.shade"
           themeColorHover="blue.darkShadeHover"
         />
+        <MedSep />
 
         <Contact />
         <MedSep />

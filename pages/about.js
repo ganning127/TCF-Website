@@ -46,7 +46,7 @@ export default function About() {
                     button1="View Interns List"
                     link1="/TODO"
                     button2="Join Us"
-                    link2="/TODO"
+                    link2="/join"
                 />
                 <MedSep />
             

@@ -39,12 +39,13 @@ export const Testimonials = ({ testimonials }) => {
                                 <SwiperSlide key={index}>
                                     <Box shadow="md" p={4} my="10">
                                         <WrapItem>
-                                            <Avatar src={person.img} mr="2" size='xl' />
+                                            <Avatar src={person.img} mr="4" size='lg' />
                                             <Box alignSelf="center">
                                                 <Text
                                                     fontSize="xl"
                                                     fontWeight="bold"
                                                     color="text.dark"
+                                                    textAlign="left"
                                                 >{person.name}</Text>
 
                                                 <Text
@@ -68,6 +69,7 @@ export const Testimonials = ({ testimonials }) => {
 
                                         <Text
                                             fontSize="xl"
+                                            mt="2"
                                         >
                                             {person.review}
                                         </Text>
