@@ -3,6 +3,7 @@ import { Container } from '@chakra-ui/react'
 import { ExecBoardOpps } from '../../components/Applications/ExecBoardOpps'
 import { NavBar } from '../../components/NavBar/index.tsx'
 import { Footer } from '../../components/Footer/index.tsx'
+import { Landing } from '../../components/Landing/index'
 import { MedSep } from '../../components/Separators/MedSep'
 
 export default function Executive() {
