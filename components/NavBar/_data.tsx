@@ -32,7 +32,7 @@ export const links: Link[] = [
       {
         label: 'Workshops',
         description: 'Learn to code through group lessons!',
-        href: '#',
+        href: '/workshops',
         icon: <MdComputer />,
       },
     ],
