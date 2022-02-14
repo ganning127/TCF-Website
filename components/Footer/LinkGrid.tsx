@@ -7,22 +7,20 @@ export const LinkGrid = (props: SimpleGridProps) => (
     <Box minW="130px">
       <FooterHeading mb="4" color="text.dark">Navigate</FooterHeading>
       <Stack>
-        <Link>Home</Link>
-        <Link>About</Link>
-        <Link>Opportunities</Link>
-        <Link>Events</Link>
-        <Link>Discord</Link>
+        <Link href='/'>Home</Link>
+        <Link href='/about'>About</Link>
+        <Link href='/join'>Join Our Team</Link>
+        <Link href='/events'>Events</Link>
+        <Link href='https://discord.gg/HbDbXyWVM2' isExternal>Discord</Link>
         <Link>FAQ</Link>
       </Stack>
     </Box>
     <Box minW="130px">
       <FooterHeading mb="4" color="text.dark">Resources</FooterHeading>
       <Stack>
-        <Link>Tutoring</Link>
-        <Link>Workshops</Link>
-        <Link>Sponsors</Link>
-        <Link>Privacy Policy</Link>
-        <Link>Terms of Service</Link>
+        <Link href='/tutoring'>Tutoring</Link>
+        <Link href='/workshops'>Workshops</Link>
+        <Link href='https://www.termsfeed.com/live/e4368a89-7481-408a-a0cf-92910a1b85c0' isExternal>Sponsors</Link>
       </Stack>
     </Box>
   </SimpleGrid>
