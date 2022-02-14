@@ -32,7 +32,7 @@ export default function Home() {
           desc="Empowering Students Coding Ambititons to 
           Reality"
           button1="Sign Up"
-          link1="/signup"
+          link1="https://forms.gle/p7sWFfqNjPdbkeXe6"
           button2="Learn More"
           link2="/about"
           pic="/home.png"

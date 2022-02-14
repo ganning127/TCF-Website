@@ -36,7 +36,7 @@ export default function Tutoring() {
                     title="Looking to Tutor"
                     desc="Passionate about coding? Want to teach others or add your knowledge to the database?"
                     buttonText="Join Us!"
-                    buttonLink="/TODO"
+                    buttonLink="/mentor/apply"
                     pic="/tutoring2.png"
                     alignText="left"
                 />
