@@ -8,6 +8,7 @@ import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import { TeamGrid } from '../components/Grid/TeamGrid'
 import { SubSectionTwoButtons } from '../components/Landing/SubSectionTwoButtons'
 import { TwoColTextOneButton } from '../components/TwoCol/TwoColTextOneButton'
+import { TwoColPicWithHeader } from '../components/TwoCol/TwoColPicWithHeader'
 
 export default function Tutoring() {
     return (
@@ -40,6 +41,14 @@ export default function Tutoring() {
                     pic="/tutoring2.png"
                     alignText="left"
                 />
+
+<TwoColPicWithHeader
+                    title="Workshops"
+                    desc1="The Coding Foundation's team if dedicated volunteers offers free virtual coding workshops for you!"
+                    desc2="Workshops made just for you!"
+                    pic="/workshops.png"
+                    alignText="left"
+                />  
 
             </Container>
             <Footer />
