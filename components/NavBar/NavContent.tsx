@@ -27,11 +27,11 @@ const MobileNavContext = (props: FlexProps) => {
         <Box as="a" rel="home" mx="auto" href="/">
           <Img src="/logo.png" alt="Keep" maxW="150px" />
         </Box>
-        <Box>
+        {/* <Box>
           <Button bg="blue.shade" color="white" as="a" href="#" borderRadius="20">
             Sign In
           </Button>
-        </Box>
+        </Box> */}
       </Flex>
       <NavMenu animate={isOpen ? 'open' : 'closed'}>
         {links.map((link, idx) =>
@@ -66,12 +66,12 @@ const DesktopNavContent = (props: any) => {
           </Box>
         ))}
       </HStack>
-      <HStack spacing="8" minW="100px" justify="space-between">
+      {/* <HStack spacing="8" minW="100px" justify="space-between">
         <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20" shadow='lg'>
           Sign In
         </Button>
 
-      </HStack>
+      </HStack> */}
     </Flex>
   )
 }
