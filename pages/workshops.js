@@ -13,9 +13,11 @@ export default function Workshops() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            <NavBar active="resources" />
+
             <Container maxW="container.xl">
 
-            <NavBar active="workshops" />
+
 
                 <TwoColPicWithHeader
                     title="Workshops"
@@ -23,11 +25,11 @@ export default function Workshops() {
                     desc2="Workshops made just for you!"
                     pic="/workshops2.png"
                     alignText="left"
-                /> 
+                />
             </Container>
             <MedSep />
-  
-            <Footer /> 
+
+            <Footer />
         </>
     )
 }

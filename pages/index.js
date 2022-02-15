@@ -77,7 +77,7 @@ export default function Home() {
           desc="Our workshops cultivate an interest for coding for students through comprehensive and interactive activities. It is an opportunity that you don't want to miss!"
           pic="/workshops.png"
           buttonText="Read More"
-          buttonLink="/TODO"
+          buttonLink="/workshops"
           themeColor="orange.shade"
           themeHover="orange.shade.hover"
         />
@@ -87,7 +87,7 @@ export default function Home() {
           desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors."
           pic="/mentoring.png"
           buttonText="Read More"
-          buttonLink="/TODO"
+          buttonLink="/workshops"
           themeColor="red.shade"
           themeHover="red.shade.hover"
         />
@@ -97,7 +97,7 @@ export default function Home() {
           desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors."
           pic="/resources.png"
           buttonText="Read More"
-          buttonLink="/TODO"
+          buttonLink="/workshops"
           themeColor="turquoise.shade"
           themeHover="turquoise.shade.hover"
         />

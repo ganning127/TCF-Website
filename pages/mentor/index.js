@@ -12,7 +12,7 @@ export default function Mentor() {
     return (
         <>
             <Head>
-                <title>The Coding Foundation</title>
+                <title>Mentor - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

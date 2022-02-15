@@ -25,9 +25,9 @@ export default function About() {
                     title="About Us"
                     desc="The Coding Foundation aims to bring free, effective and encouraging computer science education for all students in different backgrounds. The Coding Foundation offers free mentoring to foster a love in coding technology for kids. We also offer free resources for students to explore the field of STEM and get a head start on their ambitions. Through fun and engaging activities, The Coding Foundation ensures students become inspired to work with technology in the future."
                     button1="Join Us"
-                    link1="/TODO"
+                    link1="/join"
                     button2="Want to Mentor?"
-                    link2="/TODO"
+                    link2="/mentor"
                 />
 
                 <MedSep />
@@ -49,7 +49,7 @@ export default function About() {
                     link2="/join"
                 />
                 <MedSep />
-            
+
 
             </Container>
             <Footer />

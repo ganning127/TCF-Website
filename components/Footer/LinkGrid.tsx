@@ -20,7 +20,7 @@ export const LinkGrid = (props: SimpleGridProps) => (
       <Stack>
         <Link href='/tutoring'>Tutoring</Link>
         <Link href='/workshops'>Workshops</Link>
-        <Link href='https://www.termsfeed.com/live/e4368a89-7481-408a-a0cf-92910a1b85c0' isExternal>Sponsors</Link>
+        <Link href='https://www.termsfeed.com/live/e4368a89-7481-408a-a0cf-92910a1b85c0' isExternal>Terms of Service</Link>
       </Stack>
     </Box>
   </SimpleGrid>
