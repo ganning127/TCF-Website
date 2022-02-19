@@ -1,7 +1,77 @@
 [
     {
-        "title": "Python Class 1",
+        "name": "Python Week 1",
         "link": "https://drive.google.com/file/d/1cXEPibaLrWqaNf-HVW25dlRLVCsvt11L/view?usp=sharing",
-        "pic": "/python.png"
+        "pic": "https://i.imgur.com/pZT6T2x.png"
+    },
+    {
+        "name": "Python Week 2",
+        "link": "https://drive.google.com/file/d/1EHvAmGigAwIweQ0O98Yf_K3jKD2Nnu2-/view?usp=sharing",
+        "pic": "https://i.imgur.com/p6tT5qH.png"
+    },
+    {
+        "name": "Python Week 3",
+        "link": "https://drive.google.com/file/d/14iw-zuNVURan69Ywl0fY7eDZTrVkSyMp/view?usp=sharing",
+        "pic": "https://i.imgur.com/y5fKQAQ.png"
+    },
+    {
+        "name": "Python Week 4",
+        "link": "https://drive.google.com/file/d/1O-u2zHDPZ4zkoI3bRIU0IyRUGBTGU-Lo/view?usp=sharing",
+        "pic": "https://i.imgur.com/LqHvlHk.png"
+    },
+    {
+        "name": "Python Week 5",
+        "link": "https://drive.google.com/file/d/1W5AnMcYWgPA-xHMpjwFTAjxijCE7fB1D/view?usp=sharing",
+        "pic": "https://i.imgur.com/Q1R98t2.png"
+    },
+    {
+        "name": "Advanced Python Week 1",
+        "link": "https://drive.google.com/file/d/1Sv90B7LloAmfhPFAeicW46mivrBhqj04/view?usp=sharing",
+        "pic": "https://i.imgur.com/Mjy8TgY.png"
+    },
+    {
+        "name": "HTML/CSS Week 1",
+        "link": "https://drive.google.com/file/d/1vjSIw1gAjcugdM8bb9YJGOkrh1-HMKu1/view?usp=sharing",
+        "pic": "https://i.imgur.com/OCDM44q.png"
+    },
+    {
+        "name": "HTML/CSS Week 2",
+        "link": "https://drive.google.com/file/d/1bqRkH_1J4_jcTQbbiPVa-8cnkUpHevVM/view?usp=sharing",
+        "pic": "https://i.imgur.com/ruP6zGO.png"
+    },
+    {
+        "name": "HTML/CSS Week 3",
+        "link": "https://drive.google.com/file/d/1u0gHInq1JzT2pMwvB2gdibw0Suna0hdc/view?usp=sharing",
+        "pic": "https://i.imgur.com/ptuXJYy.png"
+    },
+    {
+        "name": "HTML/CSS Week 3",
+        "link": "https://drive.google.com/file/d/1u0gHInq1JzT2pMwvB2gdibw0Suna0hdc/view?usp=sharing",
+        "pic": "https://i.imgur.com/ptuXJYy.png"
+    },
+    {
+        "name": "HTML/CSS Week 5",
+        "link": "https://drive.google.com/file/d/1VdgF-n2G-DJ8_voj2aZqhJr9FqDsJqzP/view?usp=sharing",
+        "pic": "https://i.imgur.com/PTReawu.png"
+    },
+    {
+        "name": "Java Week 1",
+        "link": "https://drive.google.com/file/d/1JtJzupYA_wGf9ra7dvvO7QNIP7ybNupX/view?usp=sharing",
+        "pic": "https://i.imgur.com/5OLL8Pn.png"
+    },
+    {
+        "name": "Java Week 2",
+        "link": "https://drive.google.com/file/d/1iEh5Et2n9mCEb_tcfyrkKlmZeShjmJwc/view?usp=sharing",
+        "pic": "https://i.imgur.com/FxkibSn.png"
+    },
+    {
+        "name": "Java Week 3 - 1",
+        "link": "https://drive.google.com/file/d/1z06toxtaBDQbjlvB8ZM2BqIuzxRbZj4Y/view?usp=sharing",
+        "pic": "https://i.imgur.com/BgnmTVh.png"
+    },
+    {
+        "name": "Java Week 3 - 2",
+        "link": "https://drive.google.com/file/d/1oqsJRAVou66qEd7_99xb2RBQQR3FUbqT/view?usp=sharing",
+        "pic": "https://i.imgur.com/1MDWgIO.png"
     }
 ]

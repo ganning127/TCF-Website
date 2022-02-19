@@ -4,8 +4,12 @@ import { NavBar } from '../components/NavBar/index.tsx'
 import { Footer } from '../components/Footer/index.tsx'
 import { TwoColPicWithHeader } from '../components/TwoCol/TwoColPicWithHeader'
 import { MedSep } from '../components/Separators/MedSep'
+import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
+import WorkshopsJson from '../data/workshops.json'
+import { WorkshopGrid } from '../components/Grid/WorkshopGrid'
 
 export default function Workshops() {
+    console.log(WorkshopsJson)
     return (
         <>
             <Head>
@@ -25,6 +29,16 @@ export default function Workshops() {
                     desc2="Workshops made just for you!"
                     pic="/workshops2.png"
                     alignText="left"
+                />
+
+                <MedSep />
+
+                <HeadingWithDesc desc='All of our workshops are taught by our mentors and created by us!'>
+                    Workshop Recordings
+                </HeadingWithDesc>
+
+                <WorkshopGrid
+                    workshops={WorkshopsJson}
                 />
             </Container>
             <MedSep />
