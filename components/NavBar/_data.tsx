@@ -49,7 +49,7 @@ export const links: Link[] = [
       {
         label: 'Mentor Application',
         description: 'Apply to become a mentor today!',
-        href: '/mentor/apply',
+        href: 'https://docs.google.com/forms/d/e/1FAIpQLScNvz1utMsB0T_RCO7qFirGWxqQACwwBBjRvmjsomQCGmRkjQ/viewform',
         icon: <BiCodeCurly />,
       },
     ]

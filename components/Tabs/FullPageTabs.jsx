@@ -17,22 +17,24 @@ export const FullPageTabs = ({ data }) => {
         <>
             <Tabs variant="unstyled" textAlign="center">
                 <TabList justifyContent="center">
-                    {
-                        data.map((item, index) => {
-                            return (
-                                <Tab key={index}
-                                    rounded="lg"
-                                    fontWeight="bold"
-                                    fontSize='lg'
-                                    bg='transparent'
-                                    _selected={{ color: item.color, bg: 'gray.100' }}
-                                    _focus={{}}
-                                >
-                                    {item.title}
-                                </Tab>
-                            )
-                        })
-                    }
+                    <SimpleGrid columns={{ base: 2, md: 4 }} spacing={4} alignItems="center">
+                        {
+                            data.map((item, index) => {
+                                return (
+                                    <Tab key={index}
+                                        rounded="lg"
+                                        fontWeight="bold"
+                                        fontSize='lg'
+                                        bg='transparent'
+                                        _selected={{ color: item.color, bg: 'gray.100' }}
+                                        _focus={{}}
+                                    >
+                                        {item.title}
+                                    </Tab>
+                                )
+                            })
+                        }
+                    </SimpleGrid>
                 </TabList>
                 <TabPanels>
                     {

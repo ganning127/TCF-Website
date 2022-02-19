@@ -37,18 +37,18 @@ export default function Tutoring() {
                     title="Looking to Tutor"
                     desc="Passionate about coding? Want to teach others or add your knowledge to the database?"
                     buttonText="Join Us!"
-                    buttonLink="/mentor/apply"
+                    buttonLink="https://docs.google.com/forms/d/e/1FAIpQLScNvz1utMsB0T_RCO7qFirGWxqQACwwBBjRvmjsomQCGmRkjQ/viewform"
                     pic="/tutoring2.png"
                     alignText="left"
                 />
 
-<TwoColPicWithHeader
+                <TwoColPicWithHeader
                     title="Workshops"
                     desc1="The Coding Foundation's team if dedicated volunteers offers free virtual coding workshops for you!"
                     desc2="Workshops made just for you!"
                     pic="/workshops.png"
                     alignText="left"
-                />  
+                />
 
             </Container>
             <Footer />

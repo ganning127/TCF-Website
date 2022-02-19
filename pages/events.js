@@ -16,7 +16,7 @@ export default function Events() {
     return (
         <>
             <Head>
-                <title>The Coding Foundation</title>
+                <title>Events - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
