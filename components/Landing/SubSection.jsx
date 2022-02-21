@@ -2,7 +2,7 @@ import { Box, Text, Button, Center } from '@chakra-ui/react'
 import { HeadingWithDesc } from '../Headings/HeadingWithDesc'
 export const SubSection = ({ title, desc, desc2, desc3, buttonText, buttonLink, themeColor, themeColorHover }) => {
     return (
-        <Center h="300">
+        <Center h="200">
             <Box textAlign="center">
                 <HeadingWithDesc>
                     {title}

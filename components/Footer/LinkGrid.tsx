@@ -11,7 +11,7 @@ export const LinkGrid = (props: SimpleGridProps) => (
         <Link href='/about'>About</Link>
         <Link href='/join'>Join Our Team</Link>
         <Link href='/events'>Events</Link>
-        <Link href='https://discord.gg/HbDbXyWVM2' isExternal>Discord</Link>
+        <Link href='https://discord.gg/5gmWzdR5Ud' isExternal>Discord</Link>
         <Link>FAQ</Link>
       </Stack>
     </Box>

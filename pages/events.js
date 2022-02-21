@@ -20,7 +20,7 @@ export default function Events() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <NavBar active="home" />
+            <NavBar active="opportunities" />
 
 
             <Container maxW="container.xl">
@@ -37,8 +37,9 @@ export default function Events() {
                 />
                 <MedSep />
 
-                <HeadingWithDesc>Upcoming Events</HeadingWithDesc>
-                <TwoColCards data={EventsJson} />
+                {EventsJson.length > 0 && (<><HeadingWithDesc>Upcoming Events</HeadingWithDesc>
+                    <TwoColCards data={EventsJson} /></>)
+                }
 
 
                 <HeadingWithLogo
@@ -50,9 +51,8 @@ export default function Events() {
                 <SubSection
                     desc="Join our Discord Server to attend upcoming workshops, tutoring, and many more events!"
                     desc2="This is completely free for anyone to join the server and you can explore your passion at the same time, meet like minded people across the world!"
-                    desc3="Click the button below to take the next huge step of your life!"
                     buttonText="Join now"
-                    buttonLink="https://discord.gg/HbDbXyWVM2"
+                    buttonLink="https://discord.gg/5gmWzdR5Ud"
                     themeColor="blue.dark.shade"
                     themeColorHover="blue.darkShadeHover"
                 />

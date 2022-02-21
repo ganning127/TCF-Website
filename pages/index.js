@@ -131,7 +131,7 @@ export default function Home() {
           logo="/discord.png"
           desc="Join to get in touch with students across the world. Develop your network to develop your passion. Anyone is free to join!!"
           buttonText="Join now"
-          buttonLink="https://discord.gg/HbDbXyWVM2"
+          buttonLink="https://discord.gg/5gmWzdR5Ud"
           themeColor="blue.dark.shade"
           themeColorHover="blue.darkShadeHover"
         />

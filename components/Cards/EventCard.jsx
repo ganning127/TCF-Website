@@ -13,8 +13,8 @@ export const EventCard = ({ pic, title, desc, link, price, time }) => {
                 <Text color="text.dark" fontSize="lg" my="3" fontWeight='bold'>Time: <chakra.span fontWeight="normal">{time}</chakra.span></Text>
             </Box>
 
-            <Link href={link} isExternal>
-                <Text color="blue.shade" fontSize="xl" mt="3">More Info</Text>
+            <Link href={link} isExternal _hover={{}}>
+                <Text color="blue.shade" fontSize="xl" mt="3" _hover={{ color: 'blue.shade.hover' }}>Sign Up</Text>
             </Link>
         </Box>
     )
