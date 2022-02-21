@@ -14,7 +14,6 @@ import { Testimonials } from '../components/Testimonials'
 import { FullButtonWithPic } from '../components/TwoCol/FullButtonWithPic'
 import { SubSection } from '../components/Landing/SubSection'
 import { Contact } from '../components/TwoCol/Contact'
-import { TwoColCards } from '../components/TwoCol/TwoColCards'
 export default function Home() {
   return (
     <>

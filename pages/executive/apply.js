@@ -8,19 +8,19 @@ import { MedSep } from '../../components/Separators/MedSep'
 export default function Executive() {
     return (
         <>
-        <Head>
+            <Head>
                 <title>Executive Board Opportunities - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <NavBar active="***" /> 
+            <NavBar active="Opportunities" />
 
             <Container maxW="container.xl">
 
-            <ExecBoardOpps/>
+                <ExecBoardOpps />
 
-        <Footer />
-        </Container>
+                <Footer />
+            </Container>
 
         </>
     )
