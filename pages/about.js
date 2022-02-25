@@ -9,18 +9,32 @@ import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import { TeamGrid } from '../components/Grid/TeamGrid'
 import { SubSectionTwoButtons } from '../components/Landing/SubSectionTwoButtons'
 
+const title = "About - The Coding Foundation"
+const description = "The Coding Foundation is a nonprofit organization that aims to bring free, effective and encouraging computer science education for all students in different backgrounds. "
+const url = "https://thecodingfoundation.org/about"
+
 export default function About() {
     return (
         <>
-        <NextSeo
-        label = 'About'
-        href = '/about'
-        />
-
-            <Head>
-                <title>About - The Coding Foundation</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <NextSeo
+                title={title}
+                description={description}
+                canonical={url}
+                openGraph={{
+                    url,
+                    title,
+                    description,
+                    images: [
+                        {
+                            url: 'https://i.imgur.com/XUZTGyH.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'The Coding Foundation&apos;s logo next to the text "The Coding Foundation"',
+                            type: 'image/jpeg',
+                        },
+                    ],
+                }}
+            />
 
             <NavBar active="about" />
 

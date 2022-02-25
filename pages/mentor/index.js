@@ -8,22 +8,33 @@ import { MedSep } from '../../components/Separators/MedSep'
 import { HeadingWithDesc } from '../../components/Headings/HeadingWithDesc'
 import { TwoColMentor } from '../../components/TwoCol/TwoColMentor'
 import { TwoColBoxWithButton } from '../../components/TwoCol/TwoColBoxWithButton'
-import { GiTeacher } from "react-icons/gi";
+
+const title = "Mentor - The Coding Foundation"
+const description = "Apply to become a mentor on The Coding Foundation today to create lasting positive change in the lives of many and enlighten students coding ambitions into reality."
+const url = "https://thecodingfoundation.org/mentor"
 
 export default function Mentor() {
     return (
         <>
-        <NextSeo
-        label = 'Mentor Requirements'
-        description = 'Become a mentor and help students learn to code!'
-        href = '/mentor'
-        icon = {<GiTeacher />}
-        />
-            <Head>
-                <title>Mentor - The Coding Foundation</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
+            <NextSeo
+                title={title}
+                description={description}
+                canonical={url}
+                openGraph={{
+                    url,
+                    title,
+                    description,
+                    images: [
+                        {
+                            url: 'https://i.imgur.com/XUZTGyH.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'The Coding Foundation&apos;s logo next to the text "The Coding Foundation"',
+                            type: 'image/jpeg',
+                        },
+                    ],
+                }}
+            />
             <NavBar active="mentor" />
 
 

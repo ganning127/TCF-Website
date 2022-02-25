@@ -9,22 +9,35 @@ import { TwoColWithLongDesc } from '../components/TwoCol/TwoColWithLongDesc'
 import { HeadingWithLogo } from '../components/Headings/HeadingWithLogo'
 import { SubSection } from '../components/Landing/SubSection'
 import { TwoColCards } from '../components/TwoCol/TwoColCards'
-import { IoCalendar, IoGrid, IoHelpBuoy } from 'react-icons/io5'
-
 import EventsJson from '../data/events.json'
+
+const title = "Events - The Coding Foundation"
+const description = "Join one of our events and get involved in the community!"
+const url = "https://thecodingfoundation.org/events"
+
+
 export default function Events() {
     return (
         <>
-        <NextSeo
-        label = 'Events'
-        description = 'Discover and join virtual TCF events!'
-        href = '/events'
-        icon = {<IoCalendar />}
-        />
-            <Head>
-                <title>Events - The Coding Foundation</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <NextSeo
+                title={title}
+                description={description}
+                canonical={url}
+                openGraph={{
+                    url,
+                    title,
+                    description,
+                    images: [
+                        {
+                            url: 'https://i.imgur.com/XUZTGyH.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'The Coding Foundation&apos;s logo next to the text "The Coding Foundation"',
+                            type: 'image/jpeg',
+                        },
+                    ],
+                }}
+            />
 
             <NavBar active="opportunities" />
 

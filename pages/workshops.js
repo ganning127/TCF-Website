@@ -8,27 +8,37 @@ import { MedSep } from '../components/Separators/MedSep'
 import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import WorkshopsJson from '../data/workshops.json'
 import { WorkshopGrid } from '../components/Grid/WorkshopGrid'
-import { MdComputer } from 'react-icons/md'
+
+const title = "Workshops - The Coding Foundation"
+const description = "The Coding Foundation's team of dedicated volunteers offers free virtual coding workshops for you!"
+const url = "https://thecodingfoundation.org/workshops"
 
 export default function Workshops() {
-    console.log(WorkshopsJson)
     return (
         <>
-        <NextSeo
-        label = 'Workshops'
-        description = 'Learn to code through group lessons!'
-        href = '/workshops'
-        icon = {<MdComputer />}
-         />
+            <NextSeo
+                title={title}
+                description={description}
+                canonical={url}
+                openGraph={{
+                    url,
+                    title,
+                    description,
+                    images: [
+                        {
+                            url: 'https://i.imgur.com/XUZTGyH.png',
+                            width: 800,
+                            height: 600,
+                            alt: 'The Coding Foundation&apos;s logo next to the text "The Coding Foundation"',
+                            type: 'image/jpeg',
+                        },
+                    ],
+                }}
+            />
 
-        <Head>
-            <title>Workshops - The Coding Foundation</title>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
-        
 
             <NavBar active="resources" />
-        
+
 
             <Container maxW="container.xl">
 
@@ -37,7 +47,6 @@ export default function Workshops() {
                 <TwoColPicWithHeader
                     title="Workshops"
                     desc1="The Coding Foundation's team of dedicated volunteers offers free virtual coding workshops for you!"
-                    desc2="Workshops made just for you!"
                     pic="/workshops2.png"
                     alignText="left"
                 />
