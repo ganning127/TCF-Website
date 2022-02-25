@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
@@ -14,13 +15,34 @@ import { Testimonials } from '../components/Testimonials'
 import { FullButtonWithPic } from '../components/TwoCol/FullButtonWithPic'
 import { SubSection } from '../components/Landing/SubSection'
 import { Contact } from '../components/TwoCol/Contact'
+
+
+const title = "The Coding Foundation"
+const description = "Empowering Students Coding Ambitions to Reality. We offer free one-on-one tutoring, workshops, and mentorship to help students learn to code. No previous experience required!"
+const url = "https://thecodingfoundation.org/"
+
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>The Coding Foundation</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={url}
+        openGraph={{
+          url,
+          title,
+          description,
+          images: [
+            {
+              url: 'https://i.imgur.com/XUZTGyH.png',
+              width: 800,
+              height: 600,
+              alt: 'The Coding Foundation&apos;s logo next to the text "The Coding Foundation"',
+              type: 'image/jpeg',
+            },
+          ],
+        }}
+      />
 
       <NavBar active="home" />
 
