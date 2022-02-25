@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
@@ -9,10 +10,18 @@ import { TeamGrid } from '../components/Grid/TeamGrid'
 import { SubSectionTwoButtons } from '../components/Landing/SubSectionTwoButtons'
 import { TwoColTextOneButton } from '../components/TwoCol/TwoColTextOneButton'
 import { TwoColPicWithHeader } from '../components/TwoCol/TwoColPicWithHeader'
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 export default function Tutoring() {
     return (
         <>
+        <NextSeo
+        label = 'Tutoring'
+        description = 'Take both private lessons and group sessions all for free!'
+        href = '/tutoring'
+        icon = {<FaChalkboardTeacher />}
+
+        />
             <Head>
                 <title>Tutoring - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />

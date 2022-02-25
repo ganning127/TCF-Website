@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
@@ -8,11 +9,18 @@ import { TwoColWithLongDesc } from '../components/TwoCol/TwoColWithLongDesc'
 import { HeadingWithLogo } from '../components/Headings/HeadingWithLogo'
 import { SubSection } from '../components/Landing/SubSection'
 import { TwoColCards } from '../components/TwoCol/TwoColCards'
+import { IoCalendar, IoGrid, IoHelpBuoy } from 'react-icons/io5'
 
 import EventsJson from '../data/events.json'
 export default function Events() {
     return (
         <>
+        <NextSeo
+        label = 'Events'
+        description = 'Discover and join virtual TCF events!'
+        href = '/events'
+        icon = {<IoCalendar />}
+        />
             <Head>
                 <title>Events - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />

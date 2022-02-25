@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
@@ -7,17 +8,27 @@ import { MedSep } from '../components/Separators/MedSep'
 import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import WorkshopsJson from '../data/workshops.json'
 import { WorkshopGrid } from '../components/Grid/WorkshopGrid'
+import { MdComputer } from 'react-icons/md'
 
 export default function Workshops() {
     console.log(WorkshopsJson)
     return (
         <>
-            <Head>
-                <title>Workshops - The Coding Foundation</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+        <NextSeo
+        label = 'Workshops'
+        description = 'Learn to code through group lessons!'
+        href = '/workshops'
+        icon = {<MdComputer />}
+         />
+
+        <Head>
+            <title>Workshops - The Coding Foundation</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+        
 
             <NavBar active="resources" />
+        
 
             <Container maxW="container.xl">
 

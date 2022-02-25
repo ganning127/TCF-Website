@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../../components/NavBar/index.tsx'
@@ -7,10 +8,17 @@ import { MedSep } from '../../components/Separators/MedSep'
 import { HeadingWithDesc } from '../../components/Headings/HeadingWithDesc'
 import { TwoColMentor } from '../../components/TwoCol/TwoColMentor'
 import { TwoColBoxWithButton } from '../../components/TwoCol/TwoColBoxWithButton'
+import { GiTeacher } from "react-icons/gi";
 
 export default function Mentor() {
     return (
         <>
+        <NextSeo
+        label = 'Mentor Requirements'
+        description = 'Become a mentor and help students learn to code!'
+        href = '/mentor'
+        icon = {<GiTeacher />}
+        />
             <Head>
                 <title>Mentor - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />

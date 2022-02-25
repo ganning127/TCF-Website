@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
@@ -7,9 +8,17 @@ import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import { SubSectionTwoText } from '../components/Landing/SubSectionTwoText'
 import { FullPageTabs } from '../components/Tabs/FullPageTabs'
 import Positions from '../data/teams.json'
+import { AiOutlineTeam } from "react-icons/ai";
+
 export default function About() {
     return (
         <>
+        <NextSeo
+          label = 'Join Our Team'
+          description = 'Join a team of talented developers, designers, and project managers.'
+          href = '/join'
+          icon = {<AiOutlineTeam />}
+        />
             <Head>
                 <title>Join - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />

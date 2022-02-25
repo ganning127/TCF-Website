@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { NavBar } from '../components/NavBar/index.tsx'
@@ -11,6 +12,11 @@ import { SubSectionTwoButtons } from '../components/Landing/SubSectionTwoButtons
 export default function About() {
     return (
         <>
+        <NextSeo
+        label = 'About'
+        href = '/about'
+        />
+
             <Head>
                 <title>About - The Coding Foundation</title>
                 <link rel="icon" href="/favicon.ico" />
