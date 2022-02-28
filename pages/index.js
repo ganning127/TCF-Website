@@ -115,7 +115,7 @@ export default function Home() {
 
         <TwoColPicWithTextAndButton
           title="Resources"
-          desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors."
+          desc="By joining TCF, you'll have access to resources such as one on one tutoring, free workshops in Python, Java, HTML/CSS, and more. You'll also have the opportunity to join our team to contribute to our mission."
           pic="/resources.png"
           buttonText="Read More"
           buttonLink="/workshops"
@@ -125,7 +125,7 @@ export default function Home() {
 
         <MedSep />
 
-        <HeadingWithDesc desc="Our services only provide the best tutors that will guide you to fulfill all your programming inquires. Get started with coding, the right way with our mentors.">
+        <HeadingWithDesc desc="Hear what our students and mentors have to say!">
           Testimonials
         </HeadingWithDesc>
         <Testimonials />

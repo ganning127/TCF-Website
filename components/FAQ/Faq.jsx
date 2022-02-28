@@ -1,16 +1,12 @@
 import { Accordion, Heading, AccordionItem, Text, AccordionButton, AccordionPanel, Box, AccordionIcon } from '@chakra-ui/react'
-
+import { HeadingWithDesc } from '../Headings/HeadingWithDesc'
 import Posts from "../../data/faq.json"
 
 export const Faq = () => {
     return (
         <>
-            <Box>
-                <Heading as="h1" size="2xl" color="blue.shade.hover" mb="4" fontWeight="bold"> FAQ</Heading>
-                <Text fontSize='lg'>Any questions? Look here. Here are some frequently asked questions from students.</Text>
-            </Box>
-            <br />
-            <Accordion allowToggle>
+            <HeadingWithDesc desc="If you don't find your answer here, send us an email at thecodingfoundation@gmail.com!">FAQ</HeadingWithDesc>
+            <Accordion allowToggle mt={4}>
                 {Posts.map((data, i) => {
                     return (
                         <AccordionItem key={i}>
