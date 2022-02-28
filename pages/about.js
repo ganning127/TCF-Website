@@ -8,6 +8,7 @@ import { MedSep } from '../components/Separators/MedSep'
 import { HeadingWithDesc } from '../components/Headings/HeadingWithDesc'
 import { TeamGrid } from '../components/Grid/TeamGrid'
 import { SubSectionTwoButtons } from '../components/Landing/SubSectionTwoButtons'
+import { Faq } from '../components/FAQ/Faq'
 
 const title = "About - The Coding Foundation"
 const description = "The Coding Foundation is a nonprofit organization that aims to bring free, effective and encouraging computer science education for all students in different backgrounds. "
@@ -49,7 +50,8 @@ export default function About() {
                     button2="Want to Mentor?"
                     link2="/mentor"
                 />
-
+                <MedSep />
+                <Faq/>
                 <MedSep />
 
                 <HeadingWithDesc desc="Meet our leaders who aspire to bring forward our mission and inspire others to work with technology! ">

@@ -1,0 +1,32 @@
+[
+    {
+        "question": "Are all of your programs free?",
+        "answer": "Yes! All of our programs, including 1-on-1 tutoring, workshops, and group lessons are completely free of charge. All of our teachers and mentors volunteer their time in spreading their love of programming!"
+        
+    },
+    {
+        "question": "Can I switch to a different program once I’ve already chosen one?",
+        "answer": "Of course! We know that are many reasons to which you might want to switch a class out. Just let your instructor know beforehand, and they will take care of it!"
+        
+    },
+    {
+        "question": "Are there opportunities that I can get involved with TCF?",
+        "answer": "Certainly! With TCF, you can sign up to be an intern with one of our many departments (operations, web development, curriculum development, mentoring, business, marketing, and more!)"
+        
+    },
+    {
+        "question": "Can I choose my instructor?",
+        "answer": "Yup. You can indicate which instructor you wish to take lessons from on the signup form. However, it is good to note that we may not be able to pair all students with their desired instructors depending on availability."
+        
+    },
+    {
+        "question": "How large are class sizes?",
+        "answer": "Class size depends on the program you’re signing up for. One-on-one tutoring is made with one student and one mentor. Workshops are available for any number of students to join (though we usually get around 15-20)."
+        
+    },
+    {
+        "question": "How are instructors trained?",
+        "answer": "All of our instructors have are proficient in their respective programming languages."
+        
+    }
+]
