@@ -9,6 +9,7 @@ import {
     Textarea,
     Button,
     Box,
+    Spinner,
 } from '@chakra-ui/react'
 import { HeadingWithDesc } from '../Headings/HeadingWithDesc';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -18,9 +19,10 @@ import { useState } from 'react';
 export const Contact = (props) => {
 
     const [isSubmitted, setIsSubmitted] = useState(false);
-
+    const [loading, setLoading] = useState(false)
     const handleSubmit = async (event) => {
         event.preventDefault();
+        setLoading(true);
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
         let message = document.getElementById('message').value;
@@ -48,6 +50,7 @@ export const Contact = (props) => {
             }
 
         }
+        setLoading(false);
 
     };
 
@@ -89,7 +92,8 @@ export const Contact = (props) => {
                                     <Textarea placeholder='Message' rows="5" id="message" />
                                 </FormControl>
 
-                                <Button color="white" bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} type="submit">Submit</Button>
+                                <Button color="white" bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} type="submit">{loading &&
+                                    <Spinner mr="2" />} Send!</Button>
                             </VStack>
                             <Text bg='red.100' mt='4' p='1' rounded='lg' d='none' id='error'>There was an error, please refresh the page and try again!</Text>
                         </Form>
