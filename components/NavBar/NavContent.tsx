@@ -15,9 +15,15 @@ import { NavMenu } from './NavMenu.tsx'
 import { Submenu } from './Submenu.tsx'
 import { ToggleButton } from './ToggleButton.tsx'
 import { links } from './_data.tsx'
-
+import {
+  MoonIcon,
+  SunIcon
+} from '@chakra-ui/icons';
+import { IconButton } from '@chakra-ui/button'
+import { useColorMode } from '@chakra-ui/color-mode'
 const MobileNavContext = (props: FlexProps) => {
   const { isOpen, onToggle } = useDisclosure()
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
     <>
       <Flex align="center" justify="space-between" className="nav-content__mobile" {...props}>
@@ -27,6 +33,9 @@ const MobileNavContext = (props: FlexProps) => {
         <Box as="a" rel="home" mx="auto" href="/">
           <Img src="/logo.png" alt="Keep" maxW="150px" />
         </Box>
+        <IconButton onClick={toggleColorMode} aria-label="Toggle Mode" >
+          {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+        </IconButton>
         {/* <Box>
           <Button bg="blue.shade" color="white" as="a" href="#" borderRadius="20">
             Sign In
@@ -43,12 +52,14 @@ const MobileNavContext = (props: FlexProps) => {
             </NavLink.Mobile>
           ),
         )}
+        
       </NavMenu>
     </>
   )
 }
 
 const DesktopNavContent = (props: any) => {
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="/" rel="home">
@@ -56,6 +67,10 @@ const DesktopNavContent = (props: any) => {
         <Img src="/logo.png" alt="Keep" maxW="150px" />
       </Box>
       <HStack as="ul" id="nav__primary-menu" aria-label="Main Menu" listStyleType="none">
+      <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
+          { colorMode === 'light' ? <MoonIcon/> : <SunIcon/> }
+        </IconButton>
+         
         {links.map((link, idx) => (
           <Box as="li" key={idx} id={`nav__menuitem-${idx}`}>
             {link.children ? (
@@ -65,6 +80,7 @@ const DesktopNavContent = (props: any) => {
             )}
           </Box>
         ))}
+        
       </HStack>
       {/* <HStack spacing="8" minW="100px" justify="space-between">
         <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20" shadow='lg'>
@@ -72,6 +88,7 @@ const DesktopNavContent = (props: any) => {
         </Button>
 
       </HStack> */}
+       
     </Flex>
   )
 }
