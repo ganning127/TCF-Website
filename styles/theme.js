@@ -3,11 +3,14 @@ import { extendTheme } from "@chakra-ui/react"
 const theme = extendTheme({
     colors: {
         bkg: {
-            "light": "#ffffff"
+            "light": "#ffffff",
+            "dark": "#1A202C"
         },
         text: {
             "dark.heading": "#2E2E2E",
-            "dark": "#444343"
+            "light.heading": "#ffffff",
+            "dark": "#444343",
+            "light": "#ebebeb"
         },
         red: {
             "shade": "#BA2828",
@@ -37,6 +40,10 @@ const theme = extendTheme({
             "shade": "#3C4949",
             "light.shade": "#747474"
         },
+        shadow: {
+            "light": "lg",
+            "dark": "dark-lg"
+        }
     },
     initalColorMode: 'light',
     useSystemColorMode: false

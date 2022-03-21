@@ -6,8 +6,10 @@ import { StarIcon } from '@chakra-ui/icons'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { useColorModeValue } from '@chakra-ui/react';
 
 export const Testimonials = ({ testimonials }) => {
+    const textColor = useColorModeValue('text.dark', 'text.light')
     return (
         <>
             <Box textAlign="center">
@@ -44,14 +46,13 @@ export const Testimonials = ({ testimonials }) => {
                                                 <Text
                                                     fontSize="xl"
                                                     fontWeight="bold"
-                                                    color="text.dark"
                                                     textAlign="left"
                                                 >{person.name}</Text>
 
                                                 <Text
                                                     fontSize="md"
                                                     fontStyle="italic"
-                                                    color="text.dark"
+                                                    color={textColor}
                                                     align="left"
                                                 >{person.title}</Text>
                                                 <Flex>

@@ -34,7 +34,7 @@ const MobileNavContext = (props: FlexProps) => {
           <Img src="/logo.png" alt="Keep" maxW="150px" />
         </Box>
         <IconButton onClick={toggleColorMode} aria-label="Toggle Mode" >
-          {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </IconButton>
         {/* <Box>
           <Button bg="blue.shade" color="white" as="a" href="#" borderRadius="20">
@@ -52,14 +52,15 @@ const MobileNavContext = (props: FlexProps) => {
             </NavLink.Mobile>
           ),
         )}
-        
+
       </NavMenu>
     </>
   )
 }
 
 const DesktopNavContent = (props: any) => {
-  const { colorMode, toggleColorMode } = useColorMode()
+  const { colorMode, toggleColorMode } = useColorMode();
+  console.log(colorMode)
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="/" rel="home">
@@ -67,10 +68,10 @@ const DesktopNavContent = (props: any) => {
         <Img src="/logo.png" alt="Keep" maxW="150px" />
       </Box>
       <HStack as="ul" id="nav__primary-menu" aria-label="Main Menu" listStyleType="none">
-      <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
-          { colorMode === 'light' ? <MoonIcon/> : <SunIcon/> }
+        <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
+          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </IconButton>
-         
+
         {links.map((link, idx) => (
           <Box as="li" key={idx} id={`nav__menuitem-${idx}`}>
             {link.children ? (
@@ -80,7 +81,7 @@ const DesktopNavContent = (props: any) => {
             )}
           </Box>
         ))}
-        
+
       </HStack>
       {/* <HStack spacing="8" minW="100px" justify="space-between">
         <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20" shadow='lg'>
@@ -88,7 +89,7 @@ const DesktopNavContent = (props: any) => {
         </Button>
 
       </HStack> */}
-       
+
     </Flex>
   )
 }
