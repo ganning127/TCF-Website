@@ -26,6 +26,7 @@ const MobileNavContext = (props: FlexProps) => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <>
+    {/* bg={useColorModeValue("gray.100", "gray.900")} FOR USE WITHIN COMPONENT*/}
       <Flex align="center" justify="space-between" className="nav-content__mobile" {...props}>
         <Box>
           <ToggleButton isOpen={isOpen} onClick={onToggle} />
@@ -70,7 +71,6 @@ const DesktopNavContent = (props: any) => {
       <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
           { colorMode === 'light' ? <MoonIcon/> : <SunIcon/> }
         </IconButton>
-         
         {links.map((link, idx) => (
           <Box as="li" key={idx} id={`nav__menuitem-${idx}`}>
             {link.children ? (
