@@ -2,9 +2,9 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Text, Heading, Img, Button, Bo
 import copy from 'clipboard-copy'
 import { useState } from 'react'
 import { AiFillCheckCircle } from "react-icons/ai";
+import { useColorModeValue } from '@chakra-ui/react'
 export const FullPageTabs = ({ data }) => {
     const [clicked, setClicked] = useState(false);
-
     const copyRefer = () => {
         setClicked(true);
         copy(window.location.href);
@@ -12,7 +12,9 @@ export const FullPageTabs = ({ data }) => {
             setClicked(false);
         }, 1000);
     }
-
+    const textColor = useColorModeValue('text.dark', 'text.light')
+    const bgColor = useColorModeValue('gray.50', 'bkg.dark')
+    const shadowColor = useColorModeValue('lg', 'dark-lg')
     return (
         <>
             <Tabs variant="unstyled" textAlign="center">
@@ -25,9 +27,10 @@ export const FullPageTabs = ({ data }) => {
                                         rounded="lg"
                                         fontWeight="bold"
                                         fontSize='lg'
-                                        bg='transparent'
-                                        _selected={{ color: item.color, bg: 'gray.100' }}
+                                        _selected={{color: item.color, bg: useColorModeValue('gray.100', 'gray.700')}}
                                         _focus={{}}
+                                        shadow={shadowColor}
+                                        bg={bgColor}
                                     >
                                         {item.title}
                                     </Tab>
@@ -40,7 +43,7 @@ export const FullPageTabs = ({ data }) => {
                     {
                         data.map((item, index) => {
                             return (
-                                <TabPanel key={index} bg="gray.50" mt="1" p={8} rounded="lg" maxW='1000px' mx='auto'>
+                                <TabPanel bg={bgColor} shadow={shadowColor} key={index} mt="1" p={8} rounded="lg" maxW='1000px' mx='auto'>
                                     <Heading color={item.color} fontSize="5xl" mb={4}>
                                         {item.title}
                                     </Heading>
@@ -52,7 +55,7 @@ export const FullPageTabs = ({ data }) => {
                                             <Heading color={item.color} fontSize="5xl" >
                                                 {item.head1}
                                             </Heading>
-                                            <Text color="text.dark" fontSize="xl" mt="2">
+                                            <Text color={textColor} fontSize="xl" mt="2">
                                                 {item.desc1_1}
                                             </Text>
                                         </Box>
@@ -79,12 +82,12 @@ export const FullPageTabs = ({ data }) => {
                                         <Heading color={item.color} fontSize="5xl" >
                                             {item.head3}
                                         </Heading>
-                                        <Text color="text.dark" fontSize="xl" mt="2">
+                                        <Text color={textColor} fontSize="xl" mt="2">
                                             {item.desc3_1}
                                         </Text>
 
                                         <Divider my="8" />
-                                        <Text color="text.dark" fontSize="lg" mt="3" fontWeight=''>
+                                        <Text color={textColor} fontSize="lg" mt="3" fontWeight=''>
                                             {item.closing}
                                         </Text>
                                     </Box>

@@ -9,6 +9,7 @@ import { TwoColMentor } from '../../components/TwoCol/TwoColMentor'
 import { TwoColBoxWithButton } from '../../components/TwoCol/TwoColBoxWithButton'
 import { MentorApplication } from '../../components/Applications/MentorApplication'
 export default function Mentor() {
+    
     return (
         <>
             <Head>

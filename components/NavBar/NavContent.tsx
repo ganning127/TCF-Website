@@ -35,7 +35,7 @@ const MobileNavContext = (props: FlexProps) => {
           <Img src="/logo.png" alt="Keep" maxW="150px" />
         </Box>
         <IconButton onClick={toggleColorMode} aria-label="Toggle Mode" >
-          {colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </IconButton>
         {/* <Box>
           <Button bg="blue.shade" color="white" as="a" href="#" borderRadius="20">
@@ -61,6 +61,7 @@ const MobileNavContext = (props: FlexProps) => {
 
 const DesktopNavContent = (props: any) => {
   const { colorMode, toggleColorMode } = useColorMode()
+  console.log(colorMode)
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="/" rel="home">
@@ -69,7 +70,7 @@ const DesktopNavContent = (props: any) => {
       </Box>
       <HStack as="ul" id="nav__primary-menu" aria-label="Main Menu" listStyleType="none">
       <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
-          { colorMode === 'light' ? <MoonIcon/> : <SunIcon/> }
+          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </IconButton>
         {links.map((link, idx) => (
           <Box as="li" key={idx} id={`nav__menuitem-${idx}`}>

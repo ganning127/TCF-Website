@@ -45,7 +45,7 @@ export default function Mentor() {
                     pic="/mentor.png"
                     button1="Apply"
                     link1="https://docs.google.com/forms/d/e/1FAIpQLScNvz1utMsB0T_RCO7qFirGWxqQACwwBBjRvmjsomQCGmRkjQ/viewform"
-                />
+               />
 
                 <MedSep />
 
@@ -74,6 +74,7 @@ export default function Mentor() {
                     desc2_2="Experience in programming (Java, Python, etc.)"
                     desc2_3="Self-motivated team player who is invested in teaching others about computer programming"
 
+                    // buttonLink='mentor/apply'
                     buttonLink='https://docs.google.com/forms/d/e/1FAIpQLScNvz1utMsB0T_RCO7qFirGWxqQACwwBBjRvmjsomQCGmRkjQ/viewform'
                     buttonText='Jump To Application'
 

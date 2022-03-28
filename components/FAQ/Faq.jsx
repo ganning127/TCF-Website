@@ -1,7 +1,7 @@
 import { Accordion, Heading, AccordionItem, Text, AccordionButton, AccordionPanel, Box, AccordionIcon } from '@chakra-ui/react'
 import { HeadingWithDesc } from '../Headings/HeadingWithDesc'
 import Posts from "../../data/faq.json"
-
+import { useColorModeValue } from '@chakra-ui/react'
 export const Faq = () => {
     return (
         <>
@@ -11,7 +11,7 @@ export const Faq = () => {
                     return (
                         <AccordionItem key={i}>
                             <h2>
-                                <AccordionButton _expanded={{ bg: 'blue.shade', color: 'white' }}>
+                                <AccordionButton _expanded={{ bg: useColorModeValue('blue.shade', 'blue.dark.shade'), color: 'white' }}>
                                     <Box flex='1' textAlign='left'>
                                         {data.question}
                                     </Box>
