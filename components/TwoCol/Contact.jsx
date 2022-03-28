@@ -14,7 +14,7 @@ import {
 import { HeadingWithDesc } from '../Headings/HeadingWithDesc';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useState } from 'react';
-
+import Fade from 'react-reveal'
 
 export const Contact = (props) => {
 
@@ -60,6 +60,7 @@ export const Contact = (props) => {
                 Contact Us
             </HeadingWithDesc>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} mx="auto" textAlign="center" justifyContent="center" alignItems="center">
+                <Fade left>
                 <Box mx="auto" w="100%">
                     {!isSubmitted && <Formik
                         initialValues={{ name: 'Sasuke' }}
@@ -101,10 +102,13 @@ export const Contact = (props) => {
 
                     {isSubmitted && <Text bg='blue.shade' color='white' p='1' rounded='lg'>We have received for your message! We will get back to you as soon as possible!</Text>}
                 </Box>
+                </Fade>
 
-                <Box mx="auto" d={{ base: 'none', md: 'block' }}>
-                    <Img src="/contact.png" alt="pic" maxH="450px" />
-                </Box>
+                <Fade right>
+                    <Box mx="auto" d={{ base: 'none', md: 'block' }}>
+                        <Img src="/contact.png" alt="pic" maxH="450px" />
+                    </Box>
+                </Fade>
             </SimpleGrid >
 
         </>

@@ -1,7 +1,9 @@
 import { Box, Text, Button, Center, HStack } from '@chakra-ui/react'
 import { HeadingWithDesc } from '../Headings/HeadingWithDesc'
+import Fade from 'react-reveal'
 export const SubSectionTwoButtons = ({ title, desc, button1, link1, button2, link2 }) => {
     return (
+        <Fade bottom>
         <Center h="300">
             <Box textAlign="center">
                 <HeadingWithDesc>
@@ -21,5 +23,6 @@ export const SubSectionTwoButtons = ({ title, desc, button1, link1, button2, lin
             </Box>
 
         </Center >
+        </Fade>
     )
 }

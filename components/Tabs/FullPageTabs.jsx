@@ -2,6 +2,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Text, Heading, Img, Button, Bo
 import copy from 'clipboard-copy'
 import { useState } from 'react'
 import { AiFillCheckCircle } from "react-icons/ai";
+import Fade from 'react-reveal'
 export const FullPageTabs = ({ data }) => {
     const [clicked, setClicked] = useState(false);
 
@@ -41,6 +42,7 @@ export const FullPageTabs = ({ data }) => {
                         data.map((item, index) => {
                             return (
                                 <TabPanel key={index} bg="gray.50" mt="1" p={8} rounded="lg" maxW='1000px' mx='auto'>
+                                    <Fade bottom>
                                     <Heading color={item.color} fontSize="5xl" mb={4}>
                                         {item.title}
                                     </Heading>
@@ -101,8 +103,9 @@ export const FullPageTabs = ({ data }) => {
 
                                     </HStack>
 
-
+                                    </Fade>
                                 </TabPanel>
+                                
                             )
                         })
                     }
