@@ -1,3 +1,4 @@
+
 import { SimpleGrid, Box, Text, Heading, Img, Button } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/react'
 export const TwoColTextOneButton = ({ title, desc, buttonText, buttonLink, pic, alignText }) => {
@@ -13,7 +14,7 @@ export const TwoColTextOneButton = ({ title, desc, buttonText, buttonLink, pic, 
                     <Box textAlign="center" maxW="400px" mx="auto">
                         <Heading size="4xl" as="h1" color={headingColor} >{title}</Heading>
                         <Text color={textColor} fontSize="xl" my="3">{desc}</Text>
-                        <Button as="a" href={buttonLink} bg="turquoise.shade" color="white" _hover={{ bg: "turquoise.shade.hover" }} borderRadius="20px">{buttonText}</Button>
+                        <Button as="a" href={buttonLink} target="_blank" bg="turquoise.shade" color="white" _hover={{ bg: "turquoise.shade.hover" }} borderRadius="20px">{buttonText}</Button>
                     </Box>
                 </SimpleGrid>
             </>
@@ -28,7 +29,7 @@ export const TwoColTextOneButton = ({ title, desc, buttonText, buttonLink, pic, 
                     <Box textAlign="center" maxW="400px" mx="auto">
                         <Heading size="4xl" as="h1" color={headingColor} >{title}</Heading>
                         <Text color={textColor} fontSize="xl" my="3">{desc}</Text>
-                        <Button as="a" href={buttonLink} bg="turquoise.shade" color="white" _hover={{ bg: "turquoise.shade.hover" }} borderRadius="20px">{buttonText}</Button>
+                        <Button as="a" href={buttonLink} target="_blank" bg="turquoise.shade" color="white" _hover={{ bg: "turquoise.shade.hover" }} borderRadius="20px">{buttonText}</Button>
                     </Box>
                     <Box mx="auto">
                         <Img src={pic} alt={title} maxH="400px" />

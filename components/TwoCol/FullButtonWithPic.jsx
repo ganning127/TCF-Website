@@ -12,7 +12,7 @@ export const FullButtonWithPic = ({ title, pic, logo, desc, buttonText, buttonLi
                 <Img src={logo} alt="pic" mx="auto" maxH="150px" />
                 <Text fontSize="2xl" color={textColor} my="5">{desc}</Text>
                 
-                <Button as="a" bg={themeColor} href={buttonLink} color="white" fontWeight="bold" shadow="lg" _hover={{ bg: themeColorHover }} fontSize="lg" w="100%" my="5">
+                <Button as="a" bg={themeColor} target="_blank" href={buttonLink} color="white" fontWeight="bold" shadow="lg" _hover={{ bg: themeColorHover }} fontSize="lg" w="100%" my="5">
                     {buttonText}
                 </Button>
             

@@ -13,7 +13,7 @@ export const SubSection = ({ title, desc, desc2, desc3, buttonText, buttonLink, 
                 <Text fontSize="2xl" color={textColor} my="5" maxW="500px" textAlign="center">{desc2}</Text>
                 <Text fontSize="2xl" color={textColor} my="5" maxW="500px" textAlign="center">{desc3}</Text>
 
-                <Button bg={themeColor} as="a" href={buttonLink} color="white" fontWeight="bold" shadow="lg" _hover={{ bg: themeColorHover }} fontSize="lg" px="8" my="5" >
+                <Button bg={themeColor} as="a" href={buttonLink} target="_blank" color="white" fontWeight="bold" shadow="lg" _hover={{ bg: themeColorHover }} fontSize="lg" px="8" my="5" >
                     {buttonText}
                 </Button>
             </Box>

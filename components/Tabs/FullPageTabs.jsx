@@ -1,8 +1,7 @@
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Text, Heading, Img, Button, Box, SimpleGrid, HStack, List, ListItem, ListIcon, Divider } from '@chakra-ui/react'
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Text, Heading, Img, Button, Box, SimpleGrid, HStack, List, ListItem, ListIcon, Divider, useColorModeValue } from '@chakra-ui/react'
 import copy from 'clipboard-copy'
 import { useState } from 'react'
 import { AiFillCheckCircle } from "react-icons/ai";
-import { useColorModeValue } from '@chakra-ui/react'
 export const FullPageTabs = ({ data }) => {
     const [clicked, setClicked] = useState(false);
     const copyRefer = () => {
@@ -97,7 +96,7 @@ export const FullPageTabs = ({ data }) => {
                                             {!clicked && <Text color={item.color} fontSize="xl" >Refer a friend</Text>}
                                             {clicked && <Text color={item.color} fontSize="xl">Copied to clipboard!</Text>}
                                         </Button>
-                                        <Button as='a' href={item.button1Link} bg={item.color} color='white' px={10} fontSize='xl' _hover={{ bg: item.color + '.hover' }}>
+                                        <Button as='a' href={item.button1Link} target="_blank" bg={item.color} color='white' px={10} fontSize='xl' _hover={{ bg: item.color + '.hover' }}>
                                             {item.button1Text}
                                         </Button>
 
