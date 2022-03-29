@@ -1,6 +1,8 @@
 import { SimpleGrid, Box, Heading, Button, Text, Img, HStack } from '@chakra-ui/react'
-
+import { useColorModeValue } from '@chakra-ui/react'
 export const Landing = ({ title, desc, button1, link1, button2, link2, pic }) => {
+    const headingColor = useColorModeValue('text.dark', 'blue.shade')
+    const textColor = useColorModeValue('gray.600', 'gray.300')
     let target1 = "_self"
     let target2 = "_self"
     if (link1 && link1.startsWith('http')) {
@@ -14,8 +16,8 @@ export const Landing = ({ title, desc, button1, link1, button2, link2, pic }) =>
             <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={0}>
                 <Box d="flex" justifyContent="center">
                     <Box align="center" alignSelf="center" >
-                        <Heading size="4xl" as="h1" color="text.dark" >{title}</Heading>
-                        <Text fontStyle="italic" color="gray.600" fontSize="xl" my="3">{desc}</Text>
+                        <Heading size="4xl" as="h1" color={headingColor} >{title}</Heading>
+                        <Text fontStyle="italic" color={textColor} fontSize="xl" my="3">{desc}</Text>
 
                         <HStack justifyContent="center">
                             <Button as="a" bg="blue.shade" rounded="20px" color="white" fontWeight="bold" px="10" shadow="lg" fontSize="xl" _hover={{ bg: "blue.shade.hover" }} href={link1} target={target1}>{button1}</Button>

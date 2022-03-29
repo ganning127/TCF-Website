@@ -9,15 +9,17 @@ import {
     Textarea,
     Button,
     Box,
-    Spinner,
+    useColorModeValue,
+    Spinner
 } from '@chakra-ui/react'
 import { HeadingWithDesc } from '../Headings/HeadingWithDesc';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useState } from 'react';
 
 
-export const Contact = (props) => {
 
+export const Contact = (props) => {
+    const textColor = useColorModeValue('text.dark', 'text.light')
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [loading, setLoading] = useState(false)
     const handleSubmit = async (event) => {
@@ -76,20 +78,21 @@ export const Contact = (props) => {
                                 spacing={4}
                                 align='stretch'
                             >
-                                <FormControl isRequired borderRadius="20" color="gray.900">
-                                    <Input id='name' placeholder='Name' color="gray.900" />
+                                <FormControl isRequired borderRadius="20" color={textColor}>
+                                    <Input id='name' placeholder='Name' color={textColor} _placeholder={{ color: textColor }} />
                                 </FormControl>
 
-                                <FormControl isRequired borderRadius="20" color="gray.900">
-                                    <Input id='email' type="email" placeholder='Email' color="gray.900" />
+                                <FormControl isRequired borderRadius="20" color={textColor}>
+                                    <Input id='email' type="email" placeholder='Email' color={textColor} _placeholder={{ color: textColor }}
+                                    />
                                 </FormControl>
 
 
-                                <FormControl isRequired borderRadius="20" color="gray.900">
-                                    <Input id='subject' placeholder='Subject' color="gray.900" />
+                                <FormControl isRequired borderRadius="20" color={textColor}>
+                                    <Input id='subject' placeholder='Subject' color={textColor} _placeholder={{ color: textColor }} />
                                 </FormControl>
-                                <FormControl isRequired borderRadius="20" color="gray.900">
-                                    <Textarea placeholder='Message' rows="5" id="message" />
+                                <FormControl isRequired borderRadius="20" color={textColor}>
+                                    <Textarea placeholder='Message' rows="5" id="message" _placeholder={{ color: textColor }} />
                                 </FormControl>
 
                                 <Button color="white" bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} type="submit">{loading &&

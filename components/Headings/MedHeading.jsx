@@ -1,10 +1,12 @@
 import { Heading, Text, Box } from '@chakra-ui/react'
-
+import { useColorModeValue } from '@chakra-ui/react'
 export const MedHeading = ({ desc, children }) => {
+    const headingColor = useColorModeValue('text.dark', 'blue.shade')
+    const textColor = useColorModeValue('gray.600', 'gray.500')
     return (
         <Box textAlign="center" maxW="700px" mx="auto">
-            <Heading as="h1" size="xl" color="text.dark.heading" mb="4" fontWeight="bold">{children}</Heading>
-            {desc && <Text fontWeight="normal" color="text.dark" fontSize="lg" my="2" >{desc}</Text>}
+            <Heading as="h1" size="xl" color={headingColor} mb="4" fontWeight="bold">{children}</Heading>
+            {desc && <Text fontWeight="normal" color={textColor} fontSize="lg" my="2" >{desc}</Text>}
         </Box >
     )
 }

@@ -45,9 +45,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <GlobalStyle>
-        <ForceLightMode>
           <Component {...pageProps} />
-        </ForceLightMode>
       </GlobalStyle>
     </ChakraProvider>
   )

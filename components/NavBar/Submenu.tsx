@@ -1,4 +1,4 @@
-import { Box, Collapse, SimpleGrid, useDisclosure } from '@chakra-ui/react'
+import { Box, Collapse, SimpleGrid, useDisclosure, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaChevronDown } from 'react-icons/fa'
 import { NavLink } from './NavLink.tsx'
@@ -16,6 +16,8 @@ const DesktopSubmenu = (props: SubmenuProps) => {
   const { link } = props
   const { isOpen, getMenuProps, getTriggerProps } = useNavMenu()
 
+  const bgColor = useColorModeValue('white', 'gray.800')
+
   return (
     <>
       <NavLink.Desktop
@@ -27,15 +29,15 @@ const DesktopSubmenu = (props: SubmenuProps) => {
         fontWeight="semibold"
         {...getTriggerProps()}
       >
-        <Box color={link.label.toLowerCase() === props.active ? "blue.shade" : "text.dark"}>{link.label}</Box>
+        <Box color={link.label.toLowerCase() === props.active ? "blue.shade" : ""}>{link.label}</Box>
         <Box marginStart="2" as={FaChevronDown} fontSize="xs" />
       </NavLink.Desktop>
 
-      <NavMenu {...getMenuProps()} animate={isOpen ? 'open' : 'closed'}>
+      <NavMenu {...getMenuProps()} animate={isOpen ? 'open' : 'closed'} bg={bgColor}>
         <Box maxW="7xl" mx="auto" px="8">
           <SimpleGrid spacing="10" columns={2}>
             {link.children?.map((item, idx) => (
-              <DesktopMenuItem key={idx} title={item.label} href={item.href} icon={item.icon} color="text.dark">
+              <DesktopMenuItem key={idx} title={item.label} href={item.href} icon={item.icon} color="">
                 {item.description}
               </DesktopMenuItem>
             ))}
@@ -59,7 +61,7 @@ const MobileSubMenu = (props: SubmenuProps) => {
         cursor="pointer"
         onClick={onToggle}
         paddingEnd="4"
-        color="text.dark"
+        color=""
       >
         <Box flex="1">{link.label}</Box>
         <Box as={FaChevronDown} transform={`rotate(${isOpen ? '180deg' : '0deg'})`} />
@@ -67,7 +69,7 @@ const MobileSubMenu = (props: SubmenuProps) => {
       <Collapse in={isOpen}>
         <Box pl="5">
           {link.children?.map((item, idx) => (
-            <NavLink.Mobile key={idx} href={item.href} color="text.dark">
+            <NavLink.Mobile key={idx} href={item.href} color="">
               {item.label}
             </NavLink.Mobile>
           ))}
