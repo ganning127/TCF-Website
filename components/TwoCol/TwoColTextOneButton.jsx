@@ -21,8 +21,6 @@ export const TwoColTextOneButton = ({ title, desc, buttonText, buttonLink, pic, 
         )
     }
     else {
-        const headingColor = useColorModeValue('text.dark', 'blue.shade')
-        const textColor = useColorModeValue('text.dark', 'text.light')
         return (
             <>
                 <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10} alignItems="center">
