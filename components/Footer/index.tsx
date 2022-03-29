@@ -17,9 +17,11 @@ export const Footer = () => (
           </Fade>
         </Box>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: '10', md: '20' }}>
-          <LinkGrid spacing={{ base: '10', md: '20', lg: '28' }} flex="1" />
           <Fade bottom>
-          <SubscribeForm width={{ base: 'full', md: 'sm' }} />
+            <LinkGrid spacing={{ base: '10', md: '20', lg: '28' }} flex="1" />
+          </Fade>
+          <Fade bottom>
+            <SubscribeForm width={{ base: 'full', md: 'sm' }} />
           </Fade>
         </Stack>
       </Stack>
