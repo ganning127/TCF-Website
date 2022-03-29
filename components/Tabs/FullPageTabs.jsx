@@ -14,6 +14,7 @@ export const FullPageTabs = ({ data }) => {
     const textColor = useColorModeValue('text.dark', 'text.light')
     const bgColor = useColorModeValue('gray.50', 'bkg.dark')
     const shadowColor = useColorModeValue('lg', 'dark-lg')
+    const selectedBg = useColorModeValue('gray.100', 'gray.700')
     return (
         <>
             <Tabs variant="unstyled" textAlign="center">
@@ -26,7 +27,7 @@ export const FullPageTabs = ({ data }) => {
                                         rounded="lg"
                                         fontWeight="bold"
                                         fontSize='lg'
-                                        _selected={{color: item.color, bg: useColorModeValue('gray.100', 'gray.700')}}
+                                        _selected={{ color: item.color, bg: selectedBg }}
                                         _focus={{}}
                                         shadow={shadowColor}
                                         bg={bgColor}
