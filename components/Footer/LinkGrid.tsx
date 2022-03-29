@@ -5,7 +5,7 @@ import { FooterHeading } from './FooterHeading.tsx'
 export const LinkGrid = (props: SimpleGridProps) => (
   <SimpleGrid columns={2} {...props}>
     <Box minW="130px">
-      <FooterHeading mb="4" color="text.dark">Navigate</FooterHeading>
+      <FooterHeading mb="4">Navigate</FooterHeading>
       <Stack>
         <Link href='/'>Home</Link>
         <Link href='/about'>About</Link>
@@ -16,7 +16,7 @@ export const LinkGrid = (props: SimpleGridProps) => (
       </Stack>
     </Box>
     <Box minW="130px">
-      <FooterHeading mb="4" color="text.dark">Resources</FooterHeading>
+      <FooterHeading mb="4">Resources</FooterHeading>
       <Stack>
         <Link href='/tutoring'>Tutoring</Link>
         <Link href='/workshops'>Workshops</Link>

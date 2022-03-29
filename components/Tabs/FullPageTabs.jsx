@@ -100,11 +100,7 @@ export const FullPageTabs = ({ data }) => {
                                         <Button as='a' href={item.button1Link} target="_blank" bg={item.color} color='white' px={10} fontSize='xl' _hover={{ bg: item.color + '.hover' }}>
                                             {item.button1Text}
                                         </Button>
-
-
                                     </HStack>
-
-
                                 </TabPanel>
                             )
                         })

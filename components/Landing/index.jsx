@@ -2,7 +2,7 @@ import { SimpleGrid, Box, Heading, Button, Text, Img, HStack } from '@chakra-ui/
 import { useColorModeValue } from '@chakra-ui/react'
 export const Landing = ({ title, desc, button1, link1, button2, link2, pic }) => {
     const headingColor = useColorModeValue('text.dark', 'blue.shade')
-    const textColor = useColorModeValue('gray.600', 'gray.500')
+    const textColor = useColorModeValue('gray.600', 'gray.300')
     let target1 = "_self"
     let target2 = "_self"
     if (link1 && link1.startsWith('http')) {

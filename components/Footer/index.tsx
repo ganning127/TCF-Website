@@ -12,7 +12,7 @@ export const Footer = () => (
       <Stack direction={{ base: 'column', lg: 'row' }} spacing={{ base: '10', lg: '28' }}>
         <Box flex="1">
           {/* <Logo /> */}
-          <Img src="/logo.png" w="300px" d={{ base: 'none', lg: 'block' }} />
+          <Img src="/logo_with_bkg.png" w="300px" d={{ base: 'none', lg: 'block' }} rounded='md' />
         </Box>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: '10', md: '20' }}>
           <LinkGrid spacing={{ base: '10', md: '20', lg: '28' }} flex="1" />

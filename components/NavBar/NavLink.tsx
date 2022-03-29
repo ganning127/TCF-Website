@@ -7,6 +7,7 @@ interface NavLinkProps extends HTMLChakraProps<'a'> {
 
 const DesktopNavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>((props, ref) => {
   const { active, ...rest } = props
+  const color = mode('gray.500', 'gray.800')
   return (
     <chakra.a
       ref={ref}
@@ -15,7 +16,7 @@ const DesktopNavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>((props,
       py="6"
       fontWeight="semibold"
       aria-current={active ? 'page' : undefined}
-      color={mode('gray.600', 'gray.400')}
+      color={mode('gray.600', 'gray.100')}
       transition="all 0.2s"
       {...rest}
       _hover={{ color: 'gray.500' }}

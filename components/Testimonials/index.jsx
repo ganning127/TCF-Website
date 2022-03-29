@@ -49,7 +49,7 @@ export const Testimonials = ({ testimonials }) => {
                                                 <Text
                                                     fontSize="xl"
                                                     fontWeight="bold"
-                                                    color="text.dark"
+                                                    color={textColor}
                                                     textAlign="left"
                                                 >{person.name}</Text>
 

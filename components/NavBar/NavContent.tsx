@@ -26,13 +26,13 @@ const MobileNavContext = (props: FlexProps) => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <>
-    {/* bg={useColorModeValue("gray.100", "gray.900")} FOR USE WITHIN COMPONENT*/}
+      {/* bg={useColorModeValue("gray.100", "gray.900")} FOR USE WITHIN COMPONENT*/}
       <Flex align="center" justify="space-between" className="nav-content__mobile" {...props}>
         <Box>
           <ToggleButton isOpen={isOpen} onClick={onToggle} />
         </Box>
-        <Box as="a" rel="home" mx="auto" href="/">
-          <Img src="/logo.png" alt="Keep" maxW="150px" />
+        <Box as="a" rel="home" mx="auto" href="/" py={2}>
+          <Img src="/logo_with_bkg.png" alt="Keep" maxW="150px" rounded='md' />
         </Box>
         <IconButton onClick={toggleColorMode} aria-label="Toggle Mode" >
           {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
@@ -48,12 +48,12 @@ const MobileNavContext = (props: FlexProps) => {
           link.children ? (
             <Submenu.Mobile key={idx} link={link} />
           ) : (
-            <NavLink.Mobile key={idx} href={link.href} color="text.dark">
+            <NavLink.Mobile key={idx} href={link.href} color="">
               {link.label}
             </NavLink.Mobile>
           ),
         )}
-        
+
       </NavMenu>
     </>
   )
@@ -61,15 +61,14 @@ const MobileNavContext = (props: FlexProps) => {
 
 const DesktopNavContent = (props: any) => {
   const { colorMode, toggleColorMode } = useColorMode()
-  console.log(colorMode)
   return (
     <Flex className="nav-content__desktop" align="center" justify="space-between" {...props}>
       <Box as="a" href="/" rel="home">
         <VisuallyHidden>The Coding Foundation</VisuallyHidden>
-        <Img src="/logo.png" alt="Keep" maxW="150px" />
+        <Img src="/logo_with_bkg.png" alt="Keep" maxW="150px" rounded='md' />
       </Box>
       <HStack as="ul" id="nav__primary-menu" aria-label="Main Menu" listStyleType="none">
-      <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
+        <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
           {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </IconButton>
         {links.map((link, idx) => (
@@ -77,11 +76,11 @@ const DesktopNavContent = (props: any) => {
             {link.children ? (
               <Submenu.Desktop active={props.active} link={link} />
             ) : (
-              <NavLink.Desktop href={link.href} color={link.label.toLowerCase() === props.active ? "blue.shade" : "text.dark"}>{link.label}</NavLink.Desktop>
+              <NavLink.Desktop href={link.href} color={link.label.toLowerCase() === props.active ? "blue.shade" : ""}>{link.label}</NavLink.Desktop>
             )}
           </Box>
         ))}
-        
+
       </HStack>
       {/* <HStack spacing="8" minW="100px" justify="space-between">
         <Button bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} color="white" as="a" href="#" borderRadius="20" shadow='lg'>
@@ -89,7 +88,7 @@ const DesktopNavContent = (props: any) => {
         </Button>
 
       </HStack> */}
-       
+
     </Flex>
   )
 }

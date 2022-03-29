@@ -79,19 +79,20 @@ export const Contact = (props) => {
                                 align='stretch'
                             >
                                 <FormControl isRequired borderRadius="20" color={textColor}>
-                                    <Input id='name' placeholder='Name' color={textColor} />
+                                    <Input id='name' placeholder='Name' color={textColor} _placeholder={{ color: textColor }} />
                                 </FormControl>
 
                                 <FormControl isRequired borderRadius="20" color={textColor}>
-                                    <Input id='email' type="email" placeholder='Email' color={textColor} />
+                                    <Input id='email' type="email" placeholder='Email' color={textColor} _placeholder={{ color: textColor }}
+                                    />
                                 </FormControl>
 
 
                                 <FormControl isRequired borderRadius="20" color={textColor}>
-                                    <Input id='subject' placeholder='Subject' color={textColor} />
+                                    <Input id='subject' placeholder='Subject' color={textColor} _placeholder={{ color: textColor }} />
                                 </FormControl>
                                 <FormControl isRequired borderRadius="20" color={textColor}>
-                                    <Textarea placeholder='Message' rows="5" id="message" />
+                                    <Textarea placeholder='Message' rows="5" id="message" _placeholder={{ color: textColor }} />
                                 </FormControl>
 
                                 <Button color="white" bg="blue.shade" _hover={{ bg: "blue.shade.hover" }} type="submit">{loading &&
