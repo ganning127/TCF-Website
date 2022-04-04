@@ -27,6 +27,7 @@ const MobileNavContext = (props: FlexProps) => {
   return (
     <>
       {/* bg={useColorModeValue("gray.100", "gray.900")} FOR USE WITHIN COMPONENT*/}
+
       <Flex align="center" justify="space-between" className="nav-content__mobile" {...props}>
         <Box>
           <ToggleButton isOpen={isOpen} onClick={onToggle} />
