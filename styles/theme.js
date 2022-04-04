@@ -8,7 +8,7 @@ const theme = extendTheme({
         },
         text: {
             "dark.heading": "#2E2E2E",
-            "light.heading": "#FFFFFF",
+            "light.heading": "#ffffff",
             "dark": "#444343",
             "light": "#ebebeb"
         },
@@ -45,7 +45,6 @@ const theme = extendTheme({
             "light": "lg",
             "dark": "dark-lg"
         }
-    
     },
     initalColorMode: 'light',
     useSystemColorMode: false
