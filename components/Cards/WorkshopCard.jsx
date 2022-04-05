@@ -1,5 +1,5 @@
 import { Box, Text, Link, Image } from "@chakra-ui/react";
-import { useColorModeValue} from "@chakra-ui/react";
+import { useColorModeValue } from "@chakra-ui/react";
 export const WorkshopCard = ({ name, link, pic }) => {
     let bkgUrl = `url(${pic})`;
     const textColor = useColorModeValue('text.dark', 'text.light')

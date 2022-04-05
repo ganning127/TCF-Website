@@ -190,6 +190,5 @@ export const MentorApplication = ({ }) => {
             </Box>
 
         </>
-
     )
 }

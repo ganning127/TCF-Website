@@ -45,7 +45,7 @@ export const SubscribeForm = (props: HTMLChakraProps<'form'>) => {
   return (
     <>     <chakra.form {...props} onSubmit={subscribeEmail}>
       <Stack spacing="4">
-        <FooterHeading>Subscribe to our newsletter</FooterHeading>
+        <FooterHeading color="text.dark">Subscribe to our newsletter</FooterHeading>
         {!submitted && <>
           <Text>Never miss another event from TCF!</Text>
           <Stack spacing="4" direction={{ base: 'column', md: 'row' }} >
