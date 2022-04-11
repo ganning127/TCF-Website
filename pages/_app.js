@@ -51,6 +51,15 @@ function MyApp({ Component, pageProps }) {
       </GlobalStyle>
     </ChakraProvider>
   )
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VCSTXSR96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7VCSTXSR96');
+</script>
 }
 
 export default MyApp
