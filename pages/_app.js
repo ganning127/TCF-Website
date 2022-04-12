@@ -1,10 +1,12 @@
-import '../styles/globals.css'
-import theme from '../styles/theme'
-import * as React from 'react'
-import { useEffect } from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import { Global, css } from '@emotion/react'
-import { useColorMode } from '@chakra-ui/react'
+import "../styles/globals.css";
+import theme from "../styles/theme";
+import * as React from "react";
+import { useEffect } from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import { Global, css } from "@emotion/react";
+import { useColorMode } from "@chakra-ui/react";
+import { useRouter } from "next/router";
+import * as ga from "../lib/ga";
 
 // function ForceLightMode({ children }) {
 //   // force light mode b/c of ChakraUI bug
@@ -19,7 +21,7 @@ import { useColorMode } from '@chakra-ui/react'
 // }
 
 const GlobalStyle = ({ children }) => {
-  let { colorMode } = useColorMode()
+  let { colorMode } = useColorMode();
   return (
     <>
       <Global
@@ -38,10 +40,27 @@ const GlobalStyle = ({ children }) => {
       />
       {children}
     </>
-  )
-}
+  );
+};
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+    //When the component is mounted, subscribe to router changes
+    //and log those page views
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <ChakraProvider theme={theme}>
       <GlobalStyle>
@@ -50,7 +69,7 @@ function MyApp({ Component, pageProps }) {
         {/* </ForceLightMode> */}
       </GlobalStyle>
     </ChakraProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
