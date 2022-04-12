@@ -20,7 +20,7 @@ import { Contact } from '../components/TwoCol/Contact'
 const title = "The Coding Foundation"
 const description = "Empowering Students Coding Ambitions to Reality. We offer free one-on-one tutoring, workshops, and mentorship to help students learn to code. No previous experience required!"
 const url = "https://thecodingfoundation.org/"
-
+// hello
 export default function Home() {
   return (
     <>
